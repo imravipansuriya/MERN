@@ -18,17 +18,38 @@
 
 // Rule 1. variable name must start with a letter, underscore, or dollar sign
 
-var num1 = 10
-var _num2 = 40
-var $num3 = 50
+// var num1 = 10
+// var _num2 = 40
+// var $num3 = 50
 
-var car = 10
-var cAr = 35
-var Car = 45
-var car1 = 20
-var _car = 25
+// var car = 10
+// var cAr = 35
+// var Car = 45
+// var car1 = 20
+// var _car = 25
+// var $car = 56
+// var _demo = 88
 
-console.log(car + cAr)
+// console.log(car + cAr)
+// console.log($car)
+// console.log(_demo)
+
+var Demo = 10
+var demo = 20
+var _demo = 30
+var $demo = 40
+
+
+console.log(Demo)
+console.log(demo)
+console.log(_demo)
+console.log($demo)
+
+
+console.log(Demo + demo)
+console.log($demo + _demo)
+
+
 
 // var 2num = 50 // not allowed
 
@@ -45,10 +66,12 @@ var Variable1 = 20 // allowed because it is different from variable1
 
 
 // multiline comment
+
 /*
 asdasdsad
 asdasdasd
 */
+
 var car1 = 10
 var car2 = 20
 
