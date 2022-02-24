@@ -18,11 +18,11 @@ var Demo1 = 10;
 //     : console.log("num1 is less than num2");
 
 
-demo1 < demo2 ? console.log("true") : console.log("false")
+// demo1 < demo2 ? console.log("true") : console.log("false")
 
-demo2 < demo3 ? console.log("Yes") : console.log("No")
+// demo2 < demo3 ? console.log("Yes") : console.log("No")
 
-demo1 == Demo1 ? console.log(true) : console.log(false)
+// demo1 == Demo1 ? console.log(true) : console.log(false)
 
 // if (num1 < num2) {
 //     if (num3 > num2) {
