@@ -84,8 +84,6 @@ var Demo3 = "30"
 // console.log(demo1 != Demo1)
 // console.log(demo4 != demo6)
 
-
-
 // ===: checks the value and type of variables
 // console.log(num1 === num2); // return false, if num1 is not equal to num2
 // console.log(num1 === num3); // return false, if num1 is not equal to num3
