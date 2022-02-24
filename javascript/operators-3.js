@@ -43,7 +43,7 @@ var Demo1 = 10;
 var car1 = 10;
 var car2 = 20;
 
-// console.log(car1 + car2)
+console.log(car1 + car2)
 
 // 2. Declare 3 variables a,b and c; print sum of a and b, remainder when b is divided by c.
 
