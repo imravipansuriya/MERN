@@ -1,0 +1,45 @@
+Git: Source Code Management Technology
+
+Central Repository == Github Repository
+
+Technology used for Pulling and pushing code to Github is "GIT".
+
+Github is a service provider which used GIT to provide a central storage for code Management.
+
+
+Step 1: Initialize Git  --> git init (only once, when you have to Initialize your git repo)
+
+After every code change, now you want to push your code
+
+Step 1: git add . (staging)
+Step 2: git commit -m "Commit Message" (commit your code)
+
+
+
+git log --> to see your commit history
+
+each commit has one unique commit hash
+
+
+remote: any remote repository (which is hosted on github)
+
+Add remote:
+git remote add origin https://github.com/shashankshukla96/ravi_mern_fs_bi.git
+
+Branch:
+Each git repo can have a number of different codes.
+
+Ravi  :  branch 1 
+Shyam :  branch 2
+
+Create a new branch:
+git checkout -b "branch_name"
+
+To switch to existing branch:
+git checkout "branch_name"
+
+Push Code to github:
+git push <remote_name> <branch_name>
+
+Pull Code from github:
+git pull <remote_name> <branch_name>
