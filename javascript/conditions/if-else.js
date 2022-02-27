@@ -8,7 +8,7 @@
 
 // If the condition is true, the first block of code is executed, otherwise the second block of code is executed.
 
-/*
+
 // WAP to check whether the given number is even or odd.
 // odd: if divided by 2 has a remainder of 1, ex: 3, 5, 7, 9
 // even: if divided by 2 has a remainder of 0, ex: 2, 4, 6, 8
@@ -19,7 +19,27 @@ if ( num % 2 === 0 ) {
 } else {
     console.log("number is odd");
 }
-*/
+
+var num = 9;
+
+if ( num % 3 === 0){
+    console.log("Number is Even")
+} else{
+    console.log("Number is Odd")
+}
+
+
+var count = 8;
+
+if( count % 3 === 0){
+    console.log("Number is Even")
+}
+else{
+    console.log("Number is Odd")
+}
+
+
+
 
 /*
 // WAP to check whether the given number is positive or negative.
@@ -33,6 +53,17 @@ if ( num >= 0 ) {
     console.log("Number is negative");
 }
 */
+
+
+var student = 80;
+
+if(student >= 60){
+    console.log("Pass")
+}
+else {
+    console.log("Fail")
+}
+
 
 // WAP to find the largest of three numbers.
 
@@ -155,3 +186,4 @@ if (day === 1) {
     console.log("You are a fool !")
 }
 */
+
