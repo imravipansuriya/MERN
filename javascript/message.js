@@ -1,14 +1,6 @@
 // print message
 
-console.log("Hello World");
-
-console.log("Hello Aniket")
-
-console.log(20)
-
-console.log(true)
-
-console.log(false)
+// console.log("Hello World");
 
 // console.log(10 + 20)
 

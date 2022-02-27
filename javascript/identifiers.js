@@ -1,55 +1,17 @@
-/* ======================================================
-                        File 2
- ======================================================*/
-
-
 // Identifiers: all the variables are called as identifiers
 
-// console.log(10 + 20);
-// console.log(10 + 30);
-// console.log(10 + 40);
-// console.log(50 + 50);
-// console.log(25 + 25);
+// console.log(10 + 20)
+// console.log(10 + 30)
+// console.log(10 + 40)
 
 // 2 variable equation: x + y = 20 ; 2x - 3y = -15 ==> x = 5, y = -10
 
 // 3 rules to declare a variable:
-
-
 // Rule 1. variable name must start with a letter, underscore, or dollar sign
 
-// var num1 = 10
-// var _num2 = 40
-// var $num3 = 50
-
-// var car = 10
-// var cAr = 35
-// var Car = 45
-// var car1 = 20
-// var _car = 25
-// var $car = 56
-// var _demo = 88
-
-// console.log(car + cAr)
-// console.log($car)
-// console.log(_demo)
-
-var Demo = 10
-var demo = 20
-var _demo = 30
-var $demo = 40
-
-
-console.log(Demo)
-console.log(demo)
-console.log(_demo)
-console.log($demo)
-
-
-console.log(Demo + demo)
-console.log($demo + _demo)
-
-
+var num1 = 10
+var _num2 = 40
+var $num3 = 50
 
 // var 2num = 50 // not allowed
 
@@ -66,12 +28,7 @@ var Variable1 = 20 // allowed because it is different from variable1
 
 
 // multiline comment
-
 /*
 asdasdsad
 asdasdasd
 */
-
-var car1 = 10
-var car2 = 20
-
