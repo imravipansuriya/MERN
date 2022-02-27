@@ -1,5 +1,7 @@
 // Comparison Operators: Which are used to compare two values.
+
 // used to compare values between two variables.
+
 // They give values in Boolean, true or false.
 
 var num1 = 5; // number
@@ -23,10 +25,12 @@ var Demo3 = "30"
 // console.log(num1 > num2); // true
 // console.log(num1 > num3); // false
 
-// console.log(demo1 > demo2)
-// console.log(demo5 > demo2)
-// console.log(demo4 > demo5)
-// console.log(demo1 > demo6)
+console.log(demo1 > demo2)
+console.log(demo5 > demo2)
+console.log(demo4 > demo5)
+console.log(demo1 > demo6)
+console.log(demo3 > demo6)
+console.log(demo5 > demo2)
 
 // <
 

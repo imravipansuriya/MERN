@@ -61,6 +61,8 @@ var product1 = 10
 var product2 = 20
 
 product1 < product2 ? console.log(product1) : console.log(product2)
+
+
     
 
 
