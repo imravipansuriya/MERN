@@ -62,7 +62,7 @@ switch (day) {
 // using Switch case find whether the number is even or odd.
 
 
-var num = 4;
+var num = 2;
 switch (num % 2) {
     case 0:
         console.log("Even");
