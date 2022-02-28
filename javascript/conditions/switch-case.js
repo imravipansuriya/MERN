@@ -25,7 +25,7 @@
     7: Sunday
 */
 
-/*
+
 var day = 5;
 switch (day) {
     case 1:
@@ -53,7 +53,35 @@ switch (day) {
         console.log("You are a fool !");
         break;
 }
-*/
+
+var sun = 1;
+
+switch (sun){
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4: 
+        console.log("Thursday")
+        break;
+    case 5:
+        console.log("Friday")
+        break;
+    case 6:
+        console.log("Saturday")
+        break;
+    case 7:
+        console.log("Sunday")
+        break;
+    default:
+        console.log("you are a full !!")
+        break;
+}
 
 // switch case will result in fall through, if break is not present in the case block.
 
@@ -62,7 +90,8 @@ switch (day) {
 // using Switch case find whether the number is even or odd.
 
 
-var num = 2;
+var num = 17;
+
 switch (num % 2) {
     case 0:
         console.log("Even");
@@ -74,3 +103,17 @@ switch (num % 2) {
         console.log("You are a fool !");
         break;
 }
+
+var part1 = 13;
+
+switch (part1 % 2){
+    case 0:
+        console.log("number is positive")
+        break;
+    case 1:
+        console.log("numver is nagative")
+        break;
+    default:
+        console.log("error")
+        break;
+}   
