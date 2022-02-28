@@ -1,0 +1,31 @@
+Loops: When we want to perform certain task over and over again.
+
+// Print numbers from 1 to 100.
+
+console.log(1)
+console.log(2)
+console.log(3)
+...
+console.log(10)
+
+
+// Types of loops.
+
+1. While loop
+    Syntax: 
+        while (condition) {
+            Perform following steps until the condition is true
+            step 1
+            step 2
+            step 3
+            ...
+        }
+
+2. For Loop
+3. Do while loop
+
+
+Special Cases in Looping
+
+1. Infinite loop: when loop condition results to true always, then loop body gets executed Infinite times.
+2. Loop termination condition: the specific condition when loop condition results to false.

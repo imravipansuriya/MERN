@@ -1,0 +1,7 @@
+1. WAP to print numbers from num1 to num2. // if num2 < num1, then show error to user.
+2. WAP to print all numbers from num1 to num2 which are divisible by both 3 and 5.
+3. WAP to print a pattern
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
