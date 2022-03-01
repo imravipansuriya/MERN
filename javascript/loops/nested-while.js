@@ -54,18 +54,18 @@ while(q <= row){
 
 // WAP to print tables from 1 to 5 using while loop
 
-/*
-var j = 1;
-while (j <= 5) {
-    let num = j;
+ 
+// var j = 1;
+// while (j <= 5) {
+//     let num = j;
 
-    var i = 1;
-    while (i <= 10) {
-        console.log(num + " * " + i + " = " + num * i);
-        i++;
-    }
+//     var i = 1;
+//     while (i <= 10) {
+//         console.log(num + " * " + i + " = " + num * i);
+//         i++;
+//     }
 
-    console.log("\n");
-    j++;
-}
-*/
+//     console.log("\n");
+//     j++;
+// }
+ 
