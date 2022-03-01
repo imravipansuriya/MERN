@@ -5,7 +5,7 @@
             * * * * *
 */
 
-/*
+ 
 var numOfRows = 4;
 var numOfCols = 10;
 
@@ -22,7 +22,15 @@ while (i <= numOfRows) { // outer loop: will go through each row of table
     console.log(stars);
     i++;
 }
-*/
+
+var rows = 3;
+var cols = 3;
+var i = 1
+
+while(i <= rows){
+
+}
+
 
 // WAP to print tables from 1 to 5 using while loop
 

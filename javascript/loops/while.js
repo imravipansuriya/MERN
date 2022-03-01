@@ -1,3 +1,7 @@
+// parseInt 
+
+
+
 // WAP print numbers from 1 to 10 using while loop
 
 /*
@@ -53,20 +57,24 @@ while( i <= 20 )// loop condition
 }
 */
 
+// even numbers
 
-var g = 0;
 
-while(g <= 50){
-    
-    if(g % 2 === 0){
-        console.log(g) 
-    }
-    g++;
-}
+// var g = 0;
+
+// while(g <= 50){
+
+//     if(g % 2 === 0){
+//         console.log(g) 
+//     }
+//     g++;
+// }
 
 
  
-// Method 2
+// Method 2 
+
+// even numbers
 
 // var i = 0; // loop initializer
 
@@ -76,7 +84,6 @@ while(g <= 50){
 //     console.log(i);
 //     i += 2; // loop updation
 // }
- 
 
 // var f = 0;
 
@@ -84,6 +91,8 @@ while(g <= 50){
 //     console.log(f);
 //     f+= 2;
 // }
+
+
 
 // WAP to print all the digits of a number using while loop
 // e.g. if input is 569, then output is 5 6 9
@@ -98,14 +107,30 @@ while(num > 0) { // loop condition
 */
 
 
+var count1 = 80;
+
+while(count1 > 0){
+    console.log(count1 % 10);
+    count1 = parseInt(count1 / 10);
+}
+
+
+ 
 // WAP to print table of a number using while loop
 
-/*
-let num = 5;
+ 
+// let num = 5;
 
+// var i = 1;
+// while (i <= 10) {
+//     console.log(num + " * " + i + " = " + num * i);
+//     i++;
+// }
+ 
+var count = 8;
 var i = 1;
-while (i <= 10) {
-    console.log(num + " * " + i + " = " + num * i);
+
+while(i <= 10){
+    console.log(count + " * "  + i + " * " +  count * i);
     i++;
 }
-*/
