@@ -1,35 +1,18 @@
 // WAP to print numbers from num1 to num2. // if num2 < num1, then show error to user.
 
-// var num1 = 100;
-// var num2 = 90;
+var num1 = 100;
+var num2 = 90;
 
-// if (num1 >= num2){
-//     console.log("error")
-// }
+if (num1 >= num2){
+    console.log("error")
+}
 
-// while(num1 <= num2){
-
-//     console.log(num1++)
-
-// }
+while(num1 <= num2){
+    console.log(num1++)
+}
 
  
-
-// var num1 = 15;
-// var num2 = 50;
-
-// var e = "error"
-
-// while(num1 <= num2){
-
-//     console.log(num1);
-//     num1++;   
-    
-//     if(num2 <= num1){
-//         console.log("error")
-//     }
-// }
-
+ 
  
  
 
