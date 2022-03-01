@@ -1,17 +1,17 @@
 // WAP to print numbers from num1 to num2. // if num2 < num1, then show error to user.
- /*
-var num1 = 50;
-var num2 = 90;
 
-while(num1 <= num2){
+// var num1 = 100;
+// var num2 = 90;
 
-    console.log(num1++)
+// if (num1 >= num2){
+//     console.log("error")
+// }
 
-    // while (num1 >= num2){
-    //     console.log("error")
-    // }
+// while(num1 <= num2){
 
-}*/
+//     console.log(num1++)
+
+// }
 
  
 
@@ -37,11 +37,15 @@ while(num1 <= num2){
 
  
 // var demo1 = 10;
-// var demo2 = 20;
+// var demo2 = 50;
 
-// while (num1 % 3 === 0 && num1 % 5 === 0){
-//     console.log(num1);
+// var i = demo1
 
+// while (i <= demo2){
+//     if (i % 3 ===0 && i % 5 ===0){
+//         console.log(i)
+//     }
+//     i++;
 // }
 
 
@@ -73,22 +77,42 @@ while(num1 <= num2){
 //     q++;
 // }
 
-var Row = 6;
-var Col = 2;
+// var Row = 6;
+// var Col = 2;
 
-var i = 1;
+// var i = 1;
 
-while (i <= Row){
+// while (i <= Row){
 
-    var j = 1;
-    while(j <= Col){
+//     var j = 1;
+//     while(j <= Col){
 
-        console.log(i)
-        j++
-    }
+//         console.log(i)
+//         j++
+//     }
 
-    console.log("")
-    i++
-}
+//     console.log("")
+//     i++
+// }
 
  
+
+var row = 10;
+var col = 5;
+
+var q = 1;
+
+while(q <= row){
+
+    var m = 1;
+    var star = "";
+
+    while(m <= col){
+        star = star + m + " "
+        m++;
+    }
+    console.log(star)
+    q++;
+}
+
+
