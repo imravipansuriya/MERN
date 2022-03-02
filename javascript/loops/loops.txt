@@ -13,15 +13,25 @@ console.log(10)
 
 1. While loop
     Syntax: 
-        while (condition) {
+        initializer
+        while (condition) { // loop condition
+
+            // loop body
             Perform following steps until the condition is true
             step 1
             step 2
             step 3
             ...
+
+            // loop updation
         }
 
 2. For Loop
+    Syntax:
+        for(initializer; condition; updation) {
+            body
+        }
+
 3. Do while loop
 
 
