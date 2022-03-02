@@ -2,7 +2,7 @@
 
 /*
 {
-    var a = 1; // global scope
+    var a = 1; // global scope;
     console.log(a);
 }
 
