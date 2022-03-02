@@ -32,6 +32,7 @@ console.log(10)
             body
         }
 
+
 3. Do while loop
 
 
