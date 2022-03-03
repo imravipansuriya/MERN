@@ -80,3 +80,5 @@ if (demo % 3 === 0 && demo % 5 === 0 ){
 else{
     console.log("error");
 }
+
+

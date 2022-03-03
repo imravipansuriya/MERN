@@ -1,0 +1,10 @@
+1. WAF named "counting" to print numbers from num1 to num2, where start, and end are function;
+2 get a number, if it is even print "Number is even", if not print "Nmber is odd", try with functions
+3. WAP to check if a number is divisible by 9, (if number is divided by 9, then remained is 0, then thart number is divisible by 9)
+4. WAP to check if a number is divisble by 3 and 5 both. (do it with nested if, also with single if)
+5. WAP to print a pattern
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+        1 2 3 4 5
+
