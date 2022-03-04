@@ -1,6 +1,3 @@
-
-
-
 // let carName1 = "Volvo";
 
 // It's hot outside
@@ -28,7 +25,6 @@ let str = "I said to you, \"It's is a car\""
 
 console.log(carName3.length)
 console.log(carName2.length)
-
 
 console.log(carName2)
 console.log(carName3)

@@ -8,7 +8,6 @@
 // let demo3 = demo1 +demo2;
 // console.log(demo3)
 
-
 let demostr = "23.32";
 let demonum = 21;
 
@@ -58,3 +57,7 @@ console.log(typeof num)
 // console.log(num)
 
 // console.log(typeof num);
+
+let num4 = +demostr;
+
+console.log(typeof num4)

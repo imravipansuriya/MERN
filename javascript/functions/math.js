@@ -39,8 +39,6 @@ console.log(demo2)
 let demo3 = Math.pow(9, 2);
 console.log(demo3)
 
-
-
 // =================================
 // Square root
 // =================================
