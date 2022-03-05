@@ -1,5 +1,5 @@
 // ES6 function arrow syntax
-
+ 
 /*
 function area(length, width) {
     return length * width;
