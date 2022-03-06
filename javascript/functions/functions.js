@@ -6,8 +6,6 @@ function add() {
     console.log(10 + 20);
 }
 
-
-
 add(); // function call
 */
 
@@ -22,7 +20,6 @@ add(); // function call
 function add(a, b) {
     console.log(a + b);
 }
-
 
 // add(10, 30); // function call
 // add(20, 30); // function call

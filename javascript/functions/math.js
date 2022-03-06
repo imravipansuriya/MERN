@@ -118,3 +118,12 @@ console.log(demo12)
 
 // let num = Math.max(10, 20, 85, 40, 50, 45, 99, 105, 41);
 // console.log(num)
+
+
+
+var x = 10;
+console.log(x += 5)
+
+var x = "hi", y = 21;
+
+console.log(x, y)

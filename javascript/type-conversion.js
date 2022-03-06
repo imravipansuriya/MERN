@@ -21,10 +21,6 @@ console.log(a + b)
 console.log(typeof (10 + "5"))
 
 
-
-
-
-
 // -----------------------
 // Note :- true = 1 (Default value), false = 0 (Default value)
 // -----------------------

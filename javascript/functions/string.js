@@ -23,8 +23,9 @@ let str = "I said to you, \"It's is a car\""
 
 // character at any index
 
-console.log(carName3.length)
-console.log(carName2.length)
+// console.log(carName3.length)
+// console.log(carName2.length)
 
-console.log(carName2)
-console.log(carName3)
+// console.log(carName2)
+// console.log(carName3)
+

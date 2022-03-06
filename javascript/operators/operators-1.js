@@ -8,7 +8,7 @@ var var2 = 20; // number
 
 var var6 = 10.20 // number
 
-/*
+ 
 // addition operator: + 
 console.log(var1 + var2)
 
@@ -67,3 +67,8 @@ num1 *= 10; // num1 = num1 * 10;
 num1 /= 10; // num1 = num1 / 10;
 num1 %= 10; // num1 = num1 % 10;
 */
+
+// var demo1 = 10;
+// var demo2 = demo1 %= demo1;
+
+ 

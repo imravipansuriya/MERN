@@ -25,7 +25,6 @@
     7: Sunday
 */
 
-
 var day = 5;
 switch (day) {
     case 1:
@@ -55,7 +54,6 @@ switch (day) {
 }
 
 var sun = 1;
-
 switch (sun){
     case 1:
         console.log("Monday");
@@ -85,13 +83,9 @@ switch (sun){
 
 // switch case will result in fall through, if break is not present in the case block.
 
-
-
 // using Switch case find whether the number is even or odd.
 
-
 var num = 17;
-
 switch (num % 2) {
     case 0:
         console.log("Even");
@@ -105,7 +99,6 @@ switch (num % 2) {
 }
 
 var part1 = 13;
-
 switch (part1 % 2){
     case 0:
         console.log("number is positive")
@@ -116,4 +109,4 @@ switch (part1 % 2){
     default:
         console.log("error")
         break;
-}   
+}

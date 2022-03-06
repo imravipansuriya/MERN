@@ -9,13 +9,10 @@
 
 var var1 = 10; // number
 var var2 = 20; // number
-
 var var6 = 10.20 // number
-
 var var3 = "Hello Ravi" // string
-
-var var4 = true // boolean
+var var4 = true // boolean  defaul valur 1
 var var5 = false // boolean
- 
+
 // How to get the type of a variable:
 console.log(typeof var4);

@@ -12,6 +12,7 @@
 var num1 = 10
 var _num2 = 40
 var $num3 = 50
+var Num = 50
 
 // var 2num = 50 // not allowed
 

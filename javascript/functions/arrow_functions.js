@@ -27,3 +27,15 @@ function double(num) {
 // const double = (num) => num * 2;
 
 // const double = num => num * 2;
+
+
+var x = 173;
+var a = 17;
+
+console.log(x-=a);
+
+
+var a = 10;
+var b = 20;
+
+console.log(a == b)

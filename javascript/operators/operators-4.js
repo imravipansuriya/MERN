@@ -16,8 +16,6 @@ var demo = demo1 + demo2;
 
 console.log(demo)
 
-
-
 // var num1 = "10";
 // var num2 = "20";
 

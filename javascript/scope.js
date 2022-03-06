@@ -64,7 +64,6 @@ console.log(a);
 a = a + 5;
 console.log(a);
 
-let a = 25;
-console.log(a)
+ 
 
 // you can declare same variables with var, but not with let and const
