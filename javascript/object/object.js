@@ -28,6 +28,13 @@ let teacher = {
     }
 }
 
+let employee =  {
+    name: "Mohan",
+    experian:  5,
+    tech: "reactJs",
+    salary: 2000,
+}
+
 // console.log(teacher.address.city)
 console.log(teacher['address']['city'])
 
@@ -37,7 +44,19 @@ console.log(teacher['address']['city'])
 // let values = Object.values(student1)
 // console.log(values)
 
+// let keys = Object.keys(employee);
+// console.log(keys)
+
+// let values = Object.values(employee);
+// console.log(values)
+
 // for in loop
-for(let prop in student1) {
-    console.log(student1[prop])
+// for(let prop in student1) {
+//     console.log(student1[prop])
+// }
+
+for(let values in employee){
+    console.log(employee[values])
 }
+
+console.log()

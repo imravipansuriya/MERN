@@ -33,7 +33,7 @@ console.log(demo2)
 // power ==> 2 ^ 5 ==> 2 * 2 * 2 * 2 * 2
 // =================================
 
-// let num = Math.pow(10, 5); // 2 ^ 5
+// let num = Math.pow(2, 5); // 2 ^ 5
 // console.log(num)
 
 let demo3 = Math.pow(9, 2);
@@ -43,7 +43,7 @@ console.log(demo3)
 // Square root
 // =================================
 
-// let num = Math.sqrt(25);
+// let num = Math.sqrt(25); 
 // console.log(num)
 
 
