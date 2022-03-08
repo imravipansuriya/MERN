@@ -1,0 +1,3 @@
+1. Take an array of numbers and print all the numbers which are divisible by 3 and 5. using filter.
+2. Find sum of all the numbers in an array using for each
+3. Find product of all the numbers in an array using for each

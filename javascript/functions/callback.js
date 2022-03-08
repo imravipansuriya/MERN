@@ -2,12 +2,29 @@
 
 const square = (num) => num * num;
 
+const demo = () =>{
+    console.log("demo")
+}
+
+const demo2 = () =>{
+    demo()
+}
+
+demo2()
+
 const hello = () => {
     console.log("Hello");
 }
 
+hello()
+
 const world = () => {
     console.log("World");
+}
+world()
+
+const fn = () => {
+    console.log("fn")
 }
 
 const main = (fn) => {
@@ -15,7 +32,7 @@ const main = (fn) => {
 }
 
 main(world)
-// main(hello);
+main(hello);
 // square(5);
 
 // hello();
