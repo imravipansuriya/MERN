@@ -42,9 +42,9 @@ array.forEach(printall)
 
 // WAP to print all elements of the array in reverse order
  
-// array.reverse().forEach((e) => {
-//     console.log(e)
-// })
+array.reverse().forEach((e) => {
+    console.log(e)
+})
 
 
 // WAP to find the sum of all elements of the array
@@ -55,14 +55,14 @@ array.forEach(printall)
 // }
 // console.log(plush)
 
-let sumall = () => {
-    let plush = 0;
-    for(let c = 0;  c < array.length; c++){
-        console.log(plush = plush + array[c])
-    }
-}
+// let sumall = () => {
+//     let plush = 0;
+//     for(let c = 0;  c < array.length; c++){
+//         console.log(plush = plush + array[c])
+//     }
+// }
 
-array.forEach(sumall)
+// array.forEach(sumall)
 
 // array.forEach((element) => {
 //     console.log(element + element)

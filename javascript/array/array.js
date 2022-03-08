@@ -103,7 +103,6 @@ console.log(demo3)
 
 let demo4 = demo2.slice(0, 3)
 console.log(demo4)
-
 }
 
 // sort
