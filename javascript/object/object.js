@@ -55,6 +55,7 @@ console.log(teacher['address']['city'])
 //     console.log(student1[prop])
 // }
 
+
 for(let values in employee){
     console.log(employee[values])
 }

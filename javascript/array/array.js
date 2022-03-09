@@ -105,6 +105,7 @@ let demo4 = demo2.slice(0, 3)
 console.log(demo4)
 }
 
+
 // sort
 // let sortedArray = arr2.sort(); // sort the array   //The sort() method sorts an array alphabetically:
 // console.log(sortedArray)

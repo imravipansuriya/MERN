@@ -46,7 +46,6 @@ array.reverse().forEach((e) => {
     console.log(e)
 })
 
-
 // WAP to find the sum of all elements of the array
 
 // let plush = 0;
@@ -67,4 +66,3 @@ array.reverse().forEach((e) => {
 // array.forEach((element) => {
 //     console.log(element + element)
 // });
-

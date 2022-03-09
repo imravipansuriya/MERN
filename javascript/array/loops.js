@@ -19,6 +19,7 @@ for(let a = 0; a < array1.length; a++){
     console.log(array1[a])
 }
 
+
 // WAP to print all elements of the array in reverse order
  
 // for(let i = arr.length - 1; i >= 0; i--){

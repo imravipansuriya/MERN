@@ -25,6 +25,6 @@ console.log(evenArray)
  
 // WAP to find all odd numbers from the array
 
-// let oddArr = arr.filter(ele => ele % 2 !== 0)
+let oddArr = arr.filter(ele => ele % 2 !== 0)
 
-// console.log(oddArr)
+console.log(oddArr)

@@ -23,6 +23,7 @@ array2.forEach( (element) => {
 })
 console.log(num);
 
+
 // 3. Find product of all the numbers in an array using for each
 
 var array3 = [1, 2, 3, 4, 5];
