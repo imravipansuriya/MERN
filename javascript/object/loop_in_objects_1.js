@@ -42,26 +42,26 @@ const cars = [
 
 
 // Find the price of all red cars.
-// const redCars = cars.filter(car => car.color === 'red')
-// const redCarPrices = cars.filter(car => car.color === 'red').map(car => car.price)
+const redCars = cars.filter(car => car.color === 'red')
+const redCarPrices = cars.filter(car => car.color === 'red').map(car => car.price)
 
-// console.log(redCarPrices)
+console.log(redCarPrices)
 
 // sort the cars by year
 // callback in sort(), takes 2 parameters, a and b => 
 // if returning +ve value, a comes before b, decreasing order, second - first
 // if returning -ve value, a comes after b, increasing order, first - second
 // uses merge sort
-// const sortedCarsByYear = cars.sort((car1, car2) => {
-//     return car2.year - car1.year
-// });
+const sortedCarsByYear = cars.sort((car1, car2) => {
+    return car2.year - car1.year
+});
 
 // console.log(sortedCarsByYear)
 
 // Sort the cars by price, in increasing order
 
-// const carsByPrice = cars.sort((car1, car2) => car1.price - car2.price)
-// console.log(carsByPrice)
+const carsByPrice = cars.sort((car1, car2) => car1.price - car2.price)
+console.log(carsByPrice)
 
 // give the car models in increasing order of their prices.
 
