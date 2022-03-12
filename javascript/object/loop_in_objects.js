@@ -1203,6 +1203,8 @@ const data = [
 
 // console.log(data.length)
 
+// console.log(data.length)
+
 // for each: works on all elements but does not return anything
 // map: works on all elements and returns an array
 // filter: works on all elements and returns smaller array
@@ -1213,12 +1215,30 @@ const data = [
 //     return post.title
 // })
 
+// console.log(titlesInArr)
+
+// const titleArray = data.map((post) =>{
+//     return post.title
+// })
+
+// console.log(titleArray)
+
 // WAP to find all the posts from user with ID 1.
 
 // const postFromUser1 = data.filter(post => {
 //     if (post.userId == 1) return true;
 //     else return false;
 // })
+
+// const posttitle = data.filter((postalltitle) =>{
+//     if(postalltitle.userId == 1) {
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// })
+// console.log(posttitle)
 
 // const postFromUser1 = data.filter(post => {
 //     if (post.userId == 1) return true;
@@ -1230,5 +1250,4 @@ const data = [
 
 // const postFromUser1 = data.filter(post => post.userId == 1)
 
-
-console.log(postFromUser1)
+// console.log(postFromUser1)

@@ -24,7 +24,7 @@ const cars = [
         make: 'bmw',
         model: 'm3',
         year: 2013,
-        color: 'black',
+        color: 'white',
         price: 5000
     },
     {
@@ -36,34 +36,68 @@ const cars = [
     }
 ]
 
-// Find all card with color red
+// Find all cars with color red
 // const redCars = cars.filter(car => car.color === 'red')
 // console.log(redCars)
 
+// Find all cars with color white
+const whitecars = cars.filter((car) => {
+     return car.color === 'white'
+})
+
+console.log(whitecars)
+
 
 // Find the price of all red cars.
-const redCars = cars.filter(car => car.color === 'red')
-const redCarPrices = cars.filter(car => car.color === 'red').map(car => car.price)
+// const redCars = cars.filter(car => car.color === 'red')
+// const redCarPrices = cars.filter(car => car.color === 'red').map(car => car.price)
 
-console.log(redCarPrices)
+// console.log(redCarPrices)
+
+// Find the price of all white cars.
+
+const whiteprice = cars.filter(car => car.color === 'white').map(car => car.price)
+
+console.log(whiteprice)
 
 // sort the cars by year
 // callback in sort(), takes 2 parameters, a and b => 
 // if returning +ve value, a comes before b, decreasing order, second - first
 // if returning -ve value, a comes after b, increasing order, first - second
 // uses merge sort
-const sortedCarsByYear = cars.sort((car1, car2) => {
-    return car2.year - car1.year
-});
+// const sortedCarsByYear = cars.sort((car1, car2) => {
+//     return car2.year - car1.year
+// });
 
 // console.log(sortedCarsByYear)
 
+// const shortcars = cars.sort((car1, car2) => {
+//     return car2.year - car1.year
+// })
+
+// console.log(shortcars)
+
+
+// const shortcars = cars.sort((car1, car2)=>{
+//     return car1.year - car2.year
+// })
+
+// console.log(shortcars)
+
 // Sort the cars by price, in increasing order
 
-const carsByPrice = cars.sort((car1, car2) => car1.price - car2.price)
-console.log(carsByPrice)
+// const carsByPrice = cars.sort((car1, car2) => car1.price - car2.price)
+// console.log(carsByPrice)
+
+const carprice = cars.sort((car1, car2) =>  car1.price - car2.price)
+
+console.log(carprice)
 
 // give the car models in increasing order of their prices.
 
 // const carsByPrice = cars.sort((car1, car2) => car1.price - car2.price).map(car => car.model)
 // console.log(carsByPrice)
+
+
+const carpriceup = cars.sort((car1, car2) => car1.price - car2.price).map(car => car.price)
+console.log(carpriceup)

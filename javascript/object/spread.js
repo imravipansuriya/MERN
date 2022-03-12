@@ -27,3 +27,9 @@ let student = {
 
 // let combinedArr = { ...teacher, ...student }
 // console.log(combinedArr)
+
+// console.log(teacher)
+
+
+let bothArray = {...teacher, ...student}
+console.log(bothArray)

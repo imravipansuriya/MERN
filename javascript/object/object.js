@@ -30,6 +30,9 @@ let teacher = {
 
 // console.log(teacher.address.city)
 console.log(teacher['address']['city'])
+console.log(teacher['address']['country'])
+console.log(student2.name)
+console.log(teacher.address.state)
 
 // get all the keys/properties and values of an object
 
@@ -37,7 +40,17 @@ console.log(teacher['address']['city'])
 // let values = Object.values(student1)
 // console.log(values)
 
+let demo1 = Object.keys(student1)
+console.log(demo1)
+
+let demo2 = Object.values(student1)
+console.log(demo2)
+
 // for in loop
 for(let prop in student1) {
     console.log(student1[prop])
+}
+
+for(let demo3 in student2){
+    console.log(student2[demo3])
 }
