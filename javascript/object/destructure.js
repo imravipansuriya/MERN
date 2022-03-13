@@ -19,5 +19,3 @@ let arr = [10, 20, 30, 40, 50]
 const [ a, c, b, d, e ] = arr;
 
 console.log(a, b)
-
-

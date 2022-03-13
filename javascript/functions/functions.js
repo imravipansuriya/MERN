@@ -62,7 +62,7 @@ console.log(2 * areaOfRect)
 
 // WAF to calculate the area of a rectangle, given the length and width and write another function to print its double
 
-function area(length, width=5) {
+function area(length, width) {
     // console.log(length * width);
     return length * width;
 }

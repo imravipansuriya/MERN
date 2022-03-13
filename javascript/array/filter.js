@@ -23,6 +23,8 @@ let evenArray = array.filter( (value) => {
 })
 console.log(evenArray)
  
+
+ 
 // WAP to find all odd numbers from the array
 
 let oddArr = arr.filter(ele => ele % 2 !== 0)

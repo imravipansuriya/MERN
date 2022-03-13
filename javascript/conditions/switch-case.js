@@ -110,3 +110,4 @@ switch (part1 % 2){
         console.log("error")
         break;
 }
+

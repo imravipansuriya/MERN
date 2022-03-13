@@ -1,0 +1,329 @@
+/*
+=========
+PROBLEM 1
+=========
+
+You are provided with a number, "N". Find its factorial.
+Input Description: 
+A positive integer is provided as an input.
+Output Description: 
+Print the factorial of the integer.
+Sample Input :
+5
+Sample Output :
+120
+*/
+
+// var factorial = 5;
+// var number = 1;
+
+// for (var i = 1; i <= factorial; i++) {
+//     number = number * i
+// }
+
+// console.log(number)
+
+
+/*
+=========
+PROBLEM 2
+=========
+
+You are given with a number "N", find its cube.
+Input Description:
+A positive integer is provided as an input.
+Output Description:
+Find the cube of the number.
+Sample Input :
+2
+Sample Output :
+8
+*/
+
+// function cube(n) {
+//     console.log(n * n * n)
+// }
+// cube(2)
+
+/*
+=========
+PROBLEM 3
+=========
+
+The area of an equilateral triangle is ¼(√3a2) where "a" represents a side of the
+triangle. You are provided with the side "a". Find the area of the equilateral triangle.
+Input Description:
+The side of an equilateral triangle is provided as the input.
+Output Description:
+Find the area of the equilateral triangle and print the answer up to 2 decimal places
+after rounding off.
+Sample Input :
+20
+Sample Output :
+173.21 
+*/
+
+// 3sqrt = 1.7320508075688772
+
+function triangle(a){
+    return (Math.sqrt(3))*(a*a)/4;
+}
+ 
+let triangleside = triangle(20)
+console.log(triangleside)
+ 
+
+// 173.20508075688772
+
+/*
+=========
+PROBLEM 4
+=========
+
+You will be provided with a number. Print the number of days in the month
+corresponding to that number.
+Note: In case the input is February, print 28 days. If the Input is not in valid range
+print "Error".
+Input Description:
+Input n -> month number
+Output Description:
+Find the days in the month corresponding to the input number. Print Error if the input
+is not in a valid range.
+Sample Input :
+8
+Sample Output :
+31
+*/
+
+// var sun = 8;
+
+// switch (sun) {
+//     case 1:
+//         console.log("31");
+//         break;
+//     case 2:
+//         console.log("28");
+//         break;
+//     case 3:
+//         console.log("31");
+//         break;
+//     case 4:
+//         console.log("30")
+//         break;
+//     case 5:
+//         console.log("31")
+//         break;
+//     case 6:
+//         console.log("30")
+//         break;
+//     case 7:
+//         console.log("31")
+//         break;
+//     case 8:
+//         console.log("31")
+//         break;
+//     case 9:
+//         console.log("30")
+//         break;
+//     case 10:
+//         console.log("31")
+//         break;
+//     case 11:
+//         console.log("30")
+//         break;
+//     case 12:
+//         console.log("31")
+//         break;
+//     default:
+//         console.log("Error")
+//         break;
+// }
+
+
+/*
+=========
+PROBLEM 5
+=========
+
+You are given with a number A i.e. the temperature in Celcius. Write a program to
+convert this into Fahrenheit.
+Note: In case of decimal values, round-off to two decimal places.
+Input Description:
+A number is provided in Celcius as the input of the program.
+Output Description:
+The output shall be the temperature converted into Fahrenheit corresponding to the
+input value print up to two decimal places and round off if required.
+Sample Input:
+12
+Sample Output:
+53.60 
+*/
+
+
+
+// function Fahrenheit(celcius){
+//     console.log((celcius*1.8)+ 32);
+// }
+// Fahrenheit(12)
+
+/*
+=========
+PROBLEM 6
+=========
+
+Write a code to get an integer N and print the sum of values from 1 to N.
+Input Description: 
+A single line contains an integer N.
+Output Description: 
+Print the sum of values from 1 to N.
+Sample Input :
+10
+Sample Output : 55
+*/
+
+// var plush = 10;
+// var numberOne = 0;
+
+// for(let c = 1;  c <= plush; c++){
+//     numberOne = numberOne + c;
+    
+// }
+// console.log(numberOne);
+
+
+
+
+
+
+/*
+
+=========
+PROBLEM 7 (-----)
+=========
+
+You are provided with a number "N", Find the Nth term of the series: 1 , 4, 9, 16, 25,
+36, 49, 64, 81, .......
+(Print "Error" if N = negative value and 0 if N = 0).
+Input Description:
+An integer N is provided to you as the input.
+Output Description:
+Find the Nth term in the provided series.
+Sample Input :
+18
+Sample Output :
+324
+
+*/
+
+
+// function findNthTerm(n)
+// {   
+    
+//     if (n % 2 == 0) {
+//         n = Math.floor(n / 2);
+//         n = 2 * (n - 1);
+//        console.log(Math.floor(n / 2) + "<br>");
+//     }
+  
+//     else {
+//         n = Math.floor(n / 2) + 1;
+//         n = 2 * (n - 1);
+//         console.log(n + "<br>");
+//     }
+// }
+   
+ 
+ 
+//     let X = 18;
+//     findNthTerm(X);
+       
+//     X = 18;
+//     findNthTerm(X);
+ 
+
+/*
+=========
+PROBLEM 8
+=========
+- Let "A" be a string. Remove all the whitespaces and find it's length.
+(Print "Error" if N = negative value and 0 if N = 0).
+Input Description: 
+A string is provide as an input
+Output Description: 
+Remove all the whitespaces and then print the length of the remaining string.
+Sample Input :
+Lorem Ipsum
+Sample Output :
+10
+*/
+
+
+
+let string = "Lorem Ipsum"
+
+console.log(string.replace(/\s/g,'').length)
+
+/*
+=========
+PROBLEM 9 (------)
+=========
+You are given the coefficients of a quadratic equation in order A, B & C.
+Where A is the coefficient of X2, B is the coefficient of X and C is the constant
+term in the most simplified form.
+Example: For X2 + 5X + 6 = 0, you are given the input as: 1 5 6.
+Write a program to find all of the roots of the quadratic.
+Note: The output should be up to 2nd decimal place (round off if needed) and in case
+of a recurring decimal use braces i.e. for eg: 0.33333..... => 0.33.
+Note: Use Shri Dharacharya's Method to solve i.e. X = {-b + √(b² - 4ac) } / 2a & {-
+b-√(b² -4ac)} / 2a
+Input Description: 
+Three numbers corresponding to the coefficients of x(squared), x and constant are
+given as an input in that particular order
+Output Description: 
+Print the two values of X after rounding off to 2 decimal places if required.
+Sample Input:
+1 5 6
+Sample Output:
+-2.00 -3.00 
+
+*/
+
+// ========================================
+
+// ========================================
+
+
+
+/*
+==========
+PROBLEM 10 (------)
+==========
+
+Loki wants to steal the tesseract but in order to do so, he has to rearrange the elements
+in an array in a specific manner which is mentioned in a clue. The clue says ‘cursed
+are the odd and sorted are the even’. Loki manages to decode the clue which translates
+to “sort the even positioned elements of an array, starting from the element at index 0,
+in ascending order”. Manipulate the array so as to help Loki steal the tesseract.
+Input Description: 
+Size of the array followed by the elements of the array
+Output Description: 
+Even index array elements sorted in ascending order
+Sample Input :
+5 3 9 1 44 6
+Sample Output :
+1 9 3 44 6 */
+
+let keys = [5, 3, 9, 1, 44, 6]
+
+let keysArray = keys.filter((value)=>{
+    if(value % 2 === 0){
+        return true;
+    }else{
+        return false;
+    }
+})
+
+console.log(keysArray)
+
+// [ 44, 6 ]
+ 
