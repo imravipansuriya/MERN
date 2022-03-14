@@ -327,3 +327,85 @@ console.log(keysArray)
 
 // [ 44, 6 ]
  
+
+
+
+/*PROBLEM 11
+- Given an array of N elements.find the number of occurences of each character and
+print it in the decreasing order of occurences, if 2 or more number occurs the same
+number of times, print the numbers in decreasing order.
+Input Size : |N| <= 100000
+Sample Testcase :
+INPUT
+5
+3 3 4 4 7 8
+OUTPUT
+4 3 8 7*/
+
+
+
+
+
+
+/*PROBLEM 12
+Simi is learning about palindromic numbers. Her teacher gave him the task to count
+all palindromic numbers present in that range.Simi has told you about this and want
+your help. You design an algorithm in order to help simi.
+Input Description: 
+You will be given a number ‘n’
+Output Description: 
+Print the count of all palindromic numbers till ’n’(inclusive)
+Sample Input :
+5
+Sample Output :
+5 */
+
+
+
+/*
+PROBLEM 13
+Ajay is given a series(In example).he gone through the series but unable to understand
+it properly,he has hired you.Your task is to understand the series and print the series
+2,6,12,20,30... .You are given with a number ‘n’. Find the nth number of series.
+Input Description: 
+You will be given a number ‘n’
+Output Description: 
+Print the nth number of series
+Sample Input :
+5
+Sample Output : 30 */
+
+
+
+/*
+PROBLEM 14
+You are given with an array. Your task is to print the left rotated array after k
+opearations. Time:O(n) Extra Space: O(1)
+Input Description: 
+First line contains two number ‘n’ and ‘k’.Next line contains n space separated
+numbers.
+Output Description: 
+Print the array as mentioned.
+Sample Input :
+7 3
+1 2 3 4 5 6 7
+Sample Output :
+4 5 6 7 1 2 3*/
+
+
+
+
+/*
+PROBLEM 14
+You are given with an array. Your task is to print the left rotated array after k
+opearations. Time:O(n) Extra Space: O(1)
+Input Description: 
+First line contains two number ‘n’ and ‘k’.Next line contains n space separated
+numbers.
+Output Description: 
+Print the array as mentioned.
+Sample Input :
+7 3
+1 2 3 4 5 6 7
+Sample Output :
+4 5 6 7 1 2 3*/
