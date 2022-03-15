@@ -14,14 +14,14 @@ Sample Output :
 120
 */
 
-// var factorial = 5;
-// var number = 1;
+var factorial = 5;
+var number = 1;
 
-// for (var i = 1; i <= factorial; i++) {
-//     number = number * i
-// }
+for (var i = 1; i <= factorial; i++) {
+    number = number * i
+}
 
-// console.log(number)
+console.log(number)
 
 
 /*
@@ -40,10 +40,10 @@ Sample Output :
 8
 */
 
-// function cube(n) {
-//     console.log(n * n * n)
-// }
-// cube(2)
+function cube(n) {
+    console.log(n * n * n)
+}
+cube(2)
 
 /*
 =========
@@ -62,9 +62,7 @@ Sample Input :
 Sample Output :
 173.21 
 */
-
-// 3sqrt = 1.7320508075688772
-
+ 
 function triangle(a){
     return (Math.sqrt(3))*(a*a)/4;
 }
@@ -73,7 +71,7 @@ let triangleside = triangle(20)
 console.log(triangleside)
  
 
-// 173.20508075688772
+173.20508075688772
 
 /*
 =========
@@ -95,49 +93,49 @@ Sample Output :
 31
 */
 
-// var sun = 8;
+var sun = 8;
 
-// switch (sun) {
-//     case 1:
-//         console.log("31");
-//         break;
-//     case 2:
-//         console.log("28");
-//         break;
-//     case 3:
-//         console.log("31");
-//         break;
-//     case 4:
-//         console.log("30")
-//         break;
-//     case 5:
-//         console.log("31")
-//         break;
-//     case 6:
-//         console.log("30")
-//         break;
-//     case 7:
-//         console.log("31")
-//         break;
-//     case 8:
-//         console.log("31")
-//         break;
-//     case 9:
-//         console.log("30")
-//         break;
-//     case 10:
-//         console.log("31")
-//         break;
-//     case 11:
-//         console.log("30")
-//         break;
-//     case 12:
-//         console.log("31")
-//         break;
-//     default:
-//         console.log("Error")
-//         break;
-// }
+switch (sun) {
+    case 1:
+        console.log("31");
+        break;
+    case 2:
+        console.log("28");
+        break;
+    case 3:
+        console.log("31");
+        break;
+    case 4:
+        console.log("30")
+        break;
+    case 5:
+        console.log("31")
+        break;
+    case 6:
+        console.log("30")
+        break;
+    case 7:
+        console.log("31")
+        break;
+    case 8:
+        console.log("31")
+        break;
+    case 9:
+        console.log("30")
+        break;
+    case 10:
+        console.log("31")
+        break;
+    case 11:
+        console.log("30")
+        break;
+    case 12:
+        console.log("31")
+        break;
+    default:
+        console.log("Error")
+        break;
+}
 
 
 /*
@@ -161,10 +159,10 @@ Sample Output:
 
 
 
-// function Fahrenheit(celcius){
-//     console.log((celcius*1.8)+ 32);
-// }
-// Fahrenheit(12)
+function Fahrenheit(celcius){
+    console.log((celcius*1.8)+ 32);
+}
+Fahrenheit(12)
 
 /*
 =========
@@ -181,14 +179,14 @@ Sample Input :
 Sample Output : 55
 */
 
-// var plush = 10;
-// var numberOne = 0;
+var plush = 10;
+var numberOne = 0;
 
-// for(let c = 1;  c <= plush; c++){
-//     numberOne = numberOne + c;
+for(let c = 1;  c <= plush; c++){
+    numberOne = numberOne + c;
     
-// }
-// console.log(numberOne);
+}
+console.log(numberOne);
 
 
 
@@ -198,7 +196,7 @@ Sample Output : 55
 /*
 
 =========
-PROBLEM 7 (-----)
+PROBLEM 7 
 =========
 
 You are provided with a number "N", Find the Nth term of the series: 1 , 4, 9, 16, 25,
@@ -215,31 +213,21 @@ Sample Output :
 
 */
 
+let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-// function findNthTerm(n)
-// {   
-    
-//     if (n % 2 == 0) {
-//         n = Math.floor(n / 2);
-//         n = 2 * (n - 1);
-//        console.log(Math.floor(n / 2) + "<br>");
-//     }
+function nthTerm(number){
+    if(number <= 0){
+        console.log("Error")
+    }
+    else{
+        let term
+        term = number*number
+        console.log(term)
+    }
+  }
+nthTerm(18)
   
-//     else {
-//         n = Math.floor(n / 2) + 1;
-//         n = 2 * (n - 1);
-//         console.log(n + "<br>");
-//     }
-// }
-   
- 
- 
-//     let X = 18;
-//     findNthTerm(X);
-       
-//     X = 18;
-//     findNthTerm(X);
- 
+
 
 /*
 =========
@@ -258,14 +246,20 @@ Sample Output :
 */
 
 
+let string = "Lorem Ipsum";
 
-let string = "Lorem Ipsum"
-
-console.log(string.replace(/\s/g,'').length)
+    
+if(string <= 0){
+    console.log("Error")
+}
+else{
+    console.log((string.replace(/\s/g,'').length))
+}
+    
 
 /*
 =========
-PROBLEM 9 (------)
+PROBLEM 9 
 =========
 You are given the coefficients of a quadratic equation in order A, B & C.
 Where A is the coefficient of X2, B is the coefficient of X and C is the constant
@@ -288,15 +282,26 @@ Sample Output:
 
 */
 
-// ========================================
+      
+function validate() {
+        
+    var a = 1;
+    var b = 5;
+    var c = 6;
 
-// ========================================
+            
+    var x1 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+    var x2 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+            
+           console.log(x1, x2);
+}
 
+validate()
 
 
 /*
 ==========
-PROBLEM 10 (------)
+PROBLEM 10 
 ==========
 
 Loki wants to steal the tesseract but in order to do so, he has to rearrange the elements
@@ -316,7 +321,7 @@ Sample Output :
 let keys = [5, 3, 9, 1, 44, 6]
 
 let keysArray = keys.filter((value)=>{
-    if(value % 2 === 0){
+    if( value % 2 === 0){
         return true;
     }else{
         return false;
@@ -325,12 +330,10 @@ let keysArray = keys.filter((value)=>{
 
 console.log(keysArray)
 
-// [ 44, 6 ]
- 
-
-
-
-/*PROBLEM 11
+/*
+==========
+PROBLEM 11
+==========
 - Given an array of N elements.find the number of occurences of each character and
 print it in the decreasing order of occurences, if 2 or more number occurs the same
 number of times, print the numbers in decreasing order.
@@ -340,14 +343,16 @@ INPUT
 5
 3 3 4 4 7 8
 OUTPUT
-4 3 8 7*/
+4 3 8 7
+*/
+
+ 
 
 
-
-
-
-
-/*PROBLEM 12
+/*
+==========
+PROBLEM 12
+==========
 Simi is learning about palindromic numbers. Her teacher gave him the task to count
 all palindromic numbers present in that range.Simi has told you about this and want
 your help. You design an algorithm in order to help simi.
@@ -358,12 +363,39 @@ Print the count of all palindromic numbers till ’n’(inclusive)
 Sample Input :
 5
 Sample Output :
-5 */
+5 
+*/
 
 
+function Palnum(){
+
+    var final = 0;
+    var number = 5;
+
+    temp = number;
+
+    while(number>0) {
+
+        rem = number%10;
+        number = parseInt(number/10);
+        final = final*10+rem;
+    }
+
+    if(final==temp) {
+
+        console.log(final);
+    }
+    else{
+        console.log("not palindrome");
+    }
+ }
+
+Palnum()
 
 /*
+==========
 PROBLEM 13
+==========
 Ajay is given a series(In example).he gone through the series but unable to understand
 it properly,he has hired you.Your task is to understand the series and print the series
 2,6,12,20,30... .You are given with a number ‘n’. Find the nth number of series.
@@ -373,11 +405,36 @@ Output Description:
 Print the nth number of series
 Sample Input :
 5
-Sample Output : 30 */
+Sample Output : 
+30
+ */
+
+  
+// let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
+ 
+
+// function nthTerm(number){
+    
+//     for(i = 1; i <= number; i++){
+        
+//         console.log(s = (i*i) +i)
+//     }
+//   }
+// nthTerm(5)
 
 
+ 
 
-/*
+// function nthnumber(numb){
+
+// for(i = 1; i <= numb; i++){
+//    return ;
+// }
+// }
+
+// nthnumber(5)
+
+ /*
 PROBLEM 14
 You are given with an array. Your task is to print the left rotated array after k
 opearations. Time:O(n) Extra Space: O(1)
@@ -390,22 +447,21 @@ Sample Input :
 7 3
 1 2 3 4 5 6 7
 Sample Output :
-4 5 6 7 1 2 3*/
+4 5 6 7 1 2 3
+
+*/
 
 
-
-
-/*
-PROBLEM 14
-You are given with an array. Your task is to print the left rotated array after k
-opearations. Time:O(n) Extra Space: O(1)
+ /*
+PROBLEM 15
+You are given a postfix expression. Evaluate the given expression and print the result.
 Input Description: 
-First line contains two number ‘n’ and ‘k’.Next line contains n space separated
-numbers.
+The first line of the input is a string N, containing operators and numbers seperated by
+the single space which forms a postfix expression.
 Output Description: 
-Print the array as mentioned.
+Evaluate the post expression and print the result.
 Sample Input :
-7 3
-1 2 3 4 5 6 7
+5 3 1 * + 9 -
 Sample Output :
-4 5 6 7 1 2 3*/
+-1
+*/
