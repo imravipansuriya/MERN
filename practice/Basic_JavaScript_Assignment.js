@@ -137,7 +137,6 @@ switch (sun) {
         break;
 }
 
-
 /*
 =========
 PROBLEM 5
@@ -156,8 +155,6 @@ Sample Input:
 Sample Output:
 53.60 
 */
-
-
 
 function Fahrenheit(celcius){
     console.log((celcius*1.8)+ 32);
@@ -187,11 +184,6 @@ for(let c = 1;  c <= plush; c++){
     
 }
 console.log(numberOne);
-
-
-
-
-
 
 /*
 
