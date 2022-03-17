@@ -414,9 +414,6 @@ Sample Output :
 //   }
 // nthTerm(5)
 
-
- 
-
 // function nthnumber(numb){
 
 // for(i = 1; i <= numb; i++){
