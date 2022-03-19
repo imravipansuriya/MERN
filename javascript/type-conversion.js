@@ -11,15 +11,13 @@ console.log(typeof (d + c))
 console.log(typeof (a + e))
 console.log(typeof (a + d))
 
+console.log(d + 10)  // 11
 
-console.log(d + 10) 
+// console.log(e + 10)
 
-// console.log(e + 10) //
+console.log(a + b) // NaN
 
-console.log(a + b)
-
-console.log(typeof (10 + "5"))
-
+console.log(typeof (10 + "5")) //string
 
 // -----------------------
 // Note :- true = 1 (Default value), false = 0 (Default value)

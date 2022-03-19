@@ -338,7 +338,37 @@ OUTPUT
 4 3 8 7
 */
 
- 
+let n = 5;
+let array = [3, 3, 4, 4, 7, 8] 
+
+let hash = {};
+array.forEach(element => {
+    if(hash[element]){
+        hash[element]++
+    }else{
+        hash[element] = 1
+    }
+})
+
+console.log(hash)
+
+let elements = []
+
+for(let key in hash){
+    elements.push({
+        key: key,
+        value: hash[key]
+    })
+}
+
+const storedbyArray = elements.sort((a, b) => {
+    if(a.value == b.value){
+        return b.key -a.key
+    }
+    return b.value - a.value
+}).forEach(ele => {
+    console.log(ele.key)
+})
 
 
 /*
@@ -405,24 +435,16 @@ Sample Output :
 // let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
  
 
-// function nthTerm(number){
+function nthTerm(number){
     
-//     for(i = 1; i <= number; i++){
+    for(i = 1; i <= number; i++){
         
-//         console.log(s = (i*i) +i)
-//     }
-//   }
-// nthTerm(5)
+        console.log(s = (i*i) +i)
+    }
+  }
+nthTerm(5)
 
-// function nthnumber(numb){
-
-// for(i = 1; i <= numb; i++){
-//    return ;
-// }
-// }
-
-// nthnumber(5)
-
+ 
  /*
 PROBLEM 14
 You are given with an array. Your task is to print the left rotated array after k
@@ -439,6 +461,24 @@ Sample Output :
 4 5 6 7 1 2 3
 
 */
+
+
+let o = 7;
+let k = 3;
+let arraytwo = [1, 2, 3, 4, 5, 6, 7]
+
+
+for(let j = 1; j <= k; j++){
+    let temp = arraytwo[0];
+    for(let i = 0; i < o - 1; i++){
+        arraytwo[i] = arraytwo[i + 1]
+    }
+    arraytwo[o - 1] = temp;
+}
+console.log(arraytwo)
+
+
+
 
 
  /*

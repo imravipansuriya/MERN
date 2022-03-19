@@ -30,6 +30,5 @@ let student = {
 
 // console.log(teacher)
 
-
 let bothArray = {...teacher, ...student}
 console.log(bothArray)

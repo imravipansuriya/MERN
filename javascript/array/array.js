@@ -14,10 +14,6 @@ let demo2 = ["Apple", "Banana", "Orange"]
 
 console.log(demo2)
 
-
-
-
-
 {
 // indexing
 // console.log(arr[11])
