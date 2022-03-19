@@ -14,6 +14,22 @@ let demo2 = ["Apple", "Banana", "Orange"]
 
 console.log(demo2)
 
+/*===========================
+
+01. indexing 
+02. length
+03. toString() convert array to string
+04. join()     convert array to string with a separator
+05. push()     add an element to the end of the array 
+06. pop()      remove an element from the end of the array
+07. unshift()  add an element to the beginning of the array
+08. shift()    remove an element from the beginning of the array
+09. splice()   add or remove elements from the array, 
+               (arguments: index, how many elements to remove, elements to add)
+10. slice()    slice from index 1 to index 3 (not included)
+11. sort()     method sorts an array alphabetically
+*/
+
 {
 // indexing
 // console.log(arr[11])
