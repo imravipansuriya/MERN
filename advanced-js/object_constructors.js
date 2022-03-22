@@ -1,3 +1,9 @@
+/*
+==================================
+    javaScript Advanced class 3
+==================================
+*/
+
 const personObj = {
     name: '',
     getName: function() {

@@ -1,3 +1,11 @@
+/*
+==================================
+    javaScript Advanced class 1
+==================================
+*/
+
+
+
 const person = {
     name: 'John',
     age: 30,
@@ -14,3 +22,45 @@ const person = {
 
 person.sayHello()
 // console.log(person.sayHello());
+
+
+
+
+const person1 = {
+    name: 'John',
+    age: 30,
+    job: 'teacher',
+    address: {
+        city: 'New York',
+        state: 'NY'
+    },
+
+    sayhey: function(){
+        console.log("Hey" + " " + this.name + " " + this.age + " " + this.address.city)
+    }
+}
+
+person1.sayhey()
+
+
+
+const person2 = {
+    name: 'John',
+    age: 30,
+    job: 'teacher',
+    address: {
+        city: 'New York',
+        state: 'NY'
+    },
+
+    personArr: function(){
+        console.log("Your Citey is " + this.address.city)
+    }
+}
+
+person2.personArr()
+
+
+
+
+

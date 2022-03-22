@@ -1,3 +1,10 @@
+
+/*
+==================================
+    javaScript Advanced class 4
+==================================
+*/
+
 class Person {
     constructor(name, age, job) {
         this.name = name;

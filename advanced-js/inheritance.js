@@ -1,3 +1,9 @@
+/*
+==================================
+    javaScript Advanced class 5
+==================================
+*/
+
 class Animal {
 
     constructor(name) {
