@@ -29,9 +29,7 @@ class ClassName {
   method_3() { ... }
 }
 
-
  */
-
 
 
 class Person {
