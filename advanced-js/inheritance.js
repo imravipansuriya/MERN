@@ -3,6 +3,13 @@
     javaScript Advanced class 5
 ==================================
 */
+/*
+Class Inheritance
+-----------------
+
+To create a class inheritance, use the extends keyword.
+
+*/
 
 class Animal {
 

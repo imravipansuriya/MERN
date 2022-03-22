@@ -5,6 +5,25 @@
 ==================================
 */
 
+/*
+> class
+  Use the keyword class to create a class.
+  Always add a method named constructor():
+
+
+
+> Syntax
+-----------
+
+class ClassName {
+    constructor() { ... }
+}
+
+
+ */
+
+
+
 class Person {
     constructor(name, age, job) {
         this.name = name;
@@ -38,5 +57,6 @@ persons.push(new Person('Mike', 20, 'developer'));
 persons.forEach(person => {
     person.sayHello();
 })
+
 
 
