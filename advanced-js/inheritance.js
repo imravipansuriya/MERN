@@ -62,9 +62,9 @@ animal1.speak();
 
 // dog1.run(50);
 
-// console.log(dog1)
+console.log(dog1)
 
-// dog1.stop();
+dog1.stop();
 
 // console.log(dog1)
 // class A extends B --> all the properties and methods of B are inherited by A.
