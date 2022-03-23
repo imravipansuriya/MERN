@@ -1,5 +1,22 @@
 // object: is a collection of properties and methods
 
+
+/*
+
+Objects
+
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:20,
+    nationality:"German"
+};
+
+
+*/
+
+
+
 // student: name, age, class, address, rollno
 
 let student1 = {

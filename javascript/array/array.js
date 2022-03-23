@@ -1,4 +1,11 @@
 // array: Collection of values
+/*
+
+Arrays
+
+var fruit = ["Banana", "Apple", "Pear"];
+
+*/
 
 // How to declare array
 let emptyArray = []; // declare an empty array
