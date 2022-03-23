@@ -2,11 +2,13 @@
 
 /*
 // function definition
+
 function add() {
     console.log(10 + 20);
 }
 
 add(); // function call
+
 */
 
 // function parameter: input for the functions

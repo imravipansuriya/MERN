@@ -48,11 +48,8 @@ Objects
 
 */
 
-
-
-
-
 /*
+
 Variables
 ---------
 var, const, let
@@ -68,3 +65,28 @@ Cannot be reassigned and not accessible before they appear within the code.
 Similar to const, however, let variable can be reassigned but not re-declared.
 
 */
+
+
+var a = 3;
+var a = 10; // This will print
+
+console.log(a)
+
+
+
+const b = 3;
+//  b = 30;  // Cannot be reassigned and not accessible before they appear within the code.
+
+
+console.log(b)
+
+
+/*
+let c = 6;
+let c = 60; // eassigned but not re-declared
+*/
+
+let c = 6; 
+c = 60;
+
+console.log(c)

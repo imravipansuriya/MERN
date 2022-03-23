@@ -26,9 +26,9 @@ for(let a = 0; a < array1.length; a++){
 //     console.log(arr[i]);
 // }
 
-for(let b = array1.length - 1; b >= 0; b--){
-    console.log(array1[b])
-}
+// for(let b = array1.length - 1; b >= 0; b--){
+//     console.log(array1[b])
+// }
 
 // WAP to find the sum of all elements of the array
 
@@ -50,12 +50,12 @@ console.log(sum);
 
 
 
-let plush = 0;
-for(let c = 0;  c < array1.length; c++){
-    plush = plush + arr[c]
-}
+// let plush = 0;
+// for(let c = 0;  c < array1.length; c++){
+//     plush = plush + arr[c]
+// }
 
-console.log(plush)
+// console.log(plush)
 
 
 // let arr = [10, 20, 30, 40, 60, 80]; 
@@ -69,9 +69,9 @@ for(let i = 0 ; i < arr.length ; i++) {
 console.log(product);
 */  
 
-let multiply = 1;
-for(let d = 0; d < array1.length; d++){
-    multiply = multiply * array1[d];
-}
+// let multiply = 1;
+// for(let d = 0; d < array1.length; d++){
+//     multiply = multiply * array1[d];
+// }
 
-console.log(multiply)
+// console.log(multiply)

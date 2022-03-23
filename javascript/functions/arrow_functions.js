@@ -6,11 +6,9 @@ function area(length, width) {
 }
 */
 
-
 // const area = (length, width) => {
 //     return length * width;
 // }
-
 
 const demo = (a, b) =>{
     return a*b;

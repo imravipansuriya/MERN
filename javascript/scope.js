@@ -65,3 +65,27 @@ console.log(a);
 
 
 // you can declare same variables with var, but not with let and const
+
+
+/*
+-----------
+Block Scope
+-----------
+
+> ES6 introduced two important new JavaScript keywords: let and const.
+> These two keywords provide Block Scope in JavaScript.
+> Variables declared inside a { } block cannot be accessed from outside the block:
+*/
+
+/*
+
+{
+    const b =  3;    
+}
+
+{
+  let x = 2;  
+}
+// x can NOT be used here
+
+*/

@@ -1,8 +1,8 @@
 // array: Collection of values
 /*
-
+--------
 Arrays
-
+---------
 var fruit = ["Banana", "Apple", "Pear"];
 
 */
@@ -36,7 +36,7 @@ console.log(demo2)
 10. slice()    slice from index 1 to index 3 (not included)
 11. sort()     method sorts an array alphabetically
 */
-
+ 
 {
 // indexing
 // console.log(arr[11])
@@ -123,7 +123,6 @@ console.log(demo3)
 let demo4 = demo2.slice(0, 3)
 console.log(demo4)
 }
-
 
 // sort
 // let sortedArray = arr2.sort(); // sort the array   //The sort() method sorts an array alphabetically:

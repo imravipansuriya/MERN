@@ -1,7 +1,18 @@
+/**
+
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+
+The filter() method does not execute the function for empty elements.
+
+The filter() method does not change the original array.
+
+*/
+
+
 let arr = [1, 2, 5, 3, 11, 7, 8];
 
 // WAP to find all even numbers from the array
- 
+
 let evenArr = arr.filter((ele, index) => {
     if (ele % 2 === 0) {
         return true
@@ -22,8 +33,6 @@ let evenArray = array.filter( (value) => {
     }
 })
 console.log(evenArray)
- 
-
  
 // WAP to find all odd numbers from the array
 

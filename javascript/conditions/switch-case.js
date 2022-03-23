@@ -10,9 +10,9 @@
         ....
         default:
             // code block x
+             break;
     }
  */
-
 
 // WAP to get user input and print the day of the week.
 /*

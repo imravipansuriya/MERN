@@ -1,14 +1,23 @@
-// array.forEach(function(elements, index, arr))
 
+/*
+--------------------
+Definition and Usage
+--------------------
+
+The forEach() method calls a function for each element in an array.
+The forEach() method is not executed for empty elements.
+
+*/
+
+
+// array.forEach(function(elements, index, arr))
 
 let arr = [10, 20, 30, 40, 60, 80];
 
 let array = [10, 20, 30, 40, 50, 60, 70, 80]
 
-
-
 // WAP to print all elements of the array
-
+/*
 const printFn = (ele, index) => {
     console.log(ele)
 }
@@ -18,6 +27,7 @@ const printall = (a, b) =>{
 }
 
 array.forEach(printall)
+*/
 
 // arr.forEach(printFn)
 // function which do not have any name are called anonymous function
@@ -42,9 +52,9 @@ array.forEach(printall)
 
 // WAP to print all elements of the array in reverse order
  
-array.reverse().forEach((e) => {
-    console.log(e)
-})
+// array.reverse().forEach((e) => {
+//     console.log(e)
+// })
 
 // WAP to find the sum of all elements of the array
 

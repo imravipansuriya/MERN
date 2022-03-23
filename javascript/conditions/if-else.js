@@ -4,6 +4,7 @@
     } else {
         // do something
     }
+
 */
 
 // If the condition is true, the first block of code is executed, otherwise the second block of code is executed.

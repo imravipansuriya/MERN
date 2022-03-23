@@ -12,27 +12,28 @@ const demo2 = () =>{
 
 demo2()
 
-const hello = () => {
-    console.log("Hello");
-}
 
-hello()
+// const hello = () => {
+//     console.log("Hello");
+// }
 
-const world = () => {
-    console.log("World");
-}
-world()
+// hello()
 
-const fn = () => {
-    console.log("fn")
-}
+// const world = () => {
+//     console.log("World");
+// }
+// world()
 
-const main = (fn) => {
-    fn(); // function invocation or calling
-}
+// const fn = () => {
+//     console.log("fn")
+// }
 
-main(world)
-main(hello);
-// square(5);
+// const main = (fn) => {
+//     fn(); // function invocation or calling
+// }
 
-// hello();
+// main(world)
+// main(hello);
+// // square(5);
+
+// // hello();
