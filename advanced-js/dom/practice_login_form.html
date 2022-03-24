@@ -27,22 +27,22 @@
         <section>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 mt-3 mb-5">
                         <h1 class="page_title">Login</h1>
                     </div>
                     <div class="col-lg-8">
 
                         <div class="mb-3">
                             <label for="EmailAdd" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="EmailAdd" aria-describedby="emailHelp"
+                            <input type="email" class="form-control" onkeyup="printValue()" id="EmailAdd" aria-describedby="emailHelp"
                                 value="">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" class="form-control" id="Password" onkeyup="printValue()">
                         </div>
-                        <button onclick="hello()" type="submit" class="btn btn-primary">Submit</button>
+                        <button disabled onclick="hello()" type="submit" id="submit" class="btn btn-primary">Submit</button>
 
                     </div>
                 </div>
@@ -91,6 +91,33 @@
          }
 
          */
+
+
+         
+         // Put the entered value in bold in emailData
+        /*
+         function hello(){
+              const emailData = document.getElementById("EmailAdd").value;
+              const emialHelpData = document.getElementById("emailHelp");
+              emailHelp.innerHTML += "<b>" + emailData + "</b>";
+         }
+         */
+
+         //if email is not present, or Password is not of length 8, the submit btn should be disabled.
+
+
+         function printValue(){
+            const emailValue = document.getElementById("EmailAdd").value;
+            const passValue = document.getElementById("Password").value
+            if(emailValue.length == 0){
+                document.getElementById("submit").disabled = true;
+            } else if(passValue.length <= 8){
+                    document.getElementById("submit").disabled = true;
+                }
+            else{
+                document.getElementById("submit").disabled = false;
+            }
+         }
 
     </script>
 

@@ -17,29 +17,27 @@
   <input placeholder="Please Enter something" onkeyup="printValue()" id="inp" value="" />
 
   <button disabled id="btn2">Submit</button>
-
+  
   <p id="para">You Entered:</p>
-
   <script>
     function printHello() {
       // console.log('Hello Ravi');
 
       //How to get value from input
-      // const inputEleValue = document.getElementById('inp').value;
+      const inputEleValue = document.getElementById('inp').value;
       // // console.log("inputEle", inputEle);
       // console.log("inputValue:", inputEleValue);
 
       // Get value from inbput and add it in para
-      const inputEleValue = document.getElementById("inp").value;
-      console.log(inputEleValue)
+      // const inputEleValue = document.getElementById("inp").value;
+      // console.log(inputEleValue)
 
-      const paraTag = document.getElementById('para');
-      paraTag.innerText += inputEleValue;
+      // const paraTag = document.getElementById('para');
+      // paraTag.innerText += inputEleValue;
 
-      /*
       // Put the entered value in bold
       const paraTag = document.getElementById("para");
-      paraTag.innerHTML += inputEleValue;
+      paraTag.innerHTML += "<b>" + inputEleValue + "</b>";
 
       alert("Hello")
 
@@ -51,9 +49,9 @@
 
       let btnEle = document.getElementById("btn2");
       btnEle.disabled = false;
+
     }
-    */
-/*
+
     function printValue() {
       const inputEleValue = document.getElementById("inp").value;
       if (inputEleValue.length > 8) {
@@ -61,8 +59,28 @@
       } else {
         document.getElementById("btn2").disabled = true;
       }
-      */
     }
+
+
+
+
+
+
+
+    function printValue(){
+            const emailValue = document.getElementById("EmailAdd").value;
+            const passValue = document.getElementById("Password").value
+            if(emailValue.length == 0){
+               
+                
+            }else if(passValue.length <= 8){
+                    document.getElementById("submit").disabled = true;
+                }
+
+            else{
+                document.getElementById("submit").disabled = false;
+            }
+         }
   </script>
 </body>
 
