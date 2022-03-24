@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    border-radius: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+

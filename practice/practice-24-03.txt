@@ -1,0 +1,9 @@
+1. Create a Login Page,
+it should have a form
+Should have 2 input elements
+ 1. Email
+ 2. Password
+
+if email is not present, or Password is not of length 8, the submit btn should be disabled.
+
+It should have a button.

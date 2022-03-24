@@ -7,11 +7,6 @@ setTimeout(() => {
 }, 5000);
 
 
-console.log("Hey")
-setTimeout (()=>{
-    console.log("Hii")
-}, 2000)
-
 // blocking statement
 setTimeout(() => { 
     console.log(2);

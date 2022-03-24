@@ -13,3 +13,6 @@ Asynchronous Operations: `Statements not getting executed one after another.`
 
 #### Network Delay: 
     Time between browser sending the request and recieving the response.
+
+# DOM
+Document Object Model
