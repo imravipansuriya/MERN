@@ -40,6 +40,8 @@ Sample Output :
 8
 */
 
+
+
 function cube(n) {
     console.log(n * n * n)
 }
