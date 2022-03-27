@@ -26,3 +26,16 @@ a{
     color: #333333;
 }
 
+/* login_form */
+
+.login_form{
+    background: linear-gradient(0deg, rgb(193 193 193 / 68%), rgb(255 255 255)), url(../images/avel-chuklanov.jpg);
+    background-size:cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.login_form .form-control{
+    background-color: #ffffff66;
+}
+

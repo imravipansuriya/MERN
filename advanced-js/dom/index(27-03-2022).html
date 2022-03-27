@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="loadData()">
+    <h1>Hello Ravi !</h1>
+    <p>This is a paragraph</p>
+    <p style="background-color: red;"  onclick="printOut()">
+      sdasdasd      <p onclick="printHello()">
+        This is another paragraph
+  
+        <button id="btn-click" style="height: 50px; width: 100px">
+          Click ME
+        </button>
+      </p>
+
+    </p>
+    <input
+      placeholder="Please Enter something"
+      onkeyup="printValue()"
+      id="inp"
+      value=""
+    />
+    <button disabled id="btn2">Submit</button>
+    <p id="para">You Entered:</p>
+    <script>
+      function printHello() {
+        console.log("Hello Ravi");
+
+        //How to get value from input
+        // const inputEleValue = document.getElementById('inp').value;
+        // // console.log("inputEle", inputEle);
+        // console.log("inputValue:", inputEleValue);
+
+        // Get value from inbput and add it in para
+        // const inputEleValue = document.getElementById("inp").value;
+        // console.log(inputEleValue)
+
+        // const paraTag = document.getElementById('para');
+        // paraTag.innerText += inputEleValue;
+
+        // Put the entered value in bold
+        // const paraTag = document.getElementById("para");
+        // paraTag.innerHTML += inputEleValue;
+
+        // alert("Hello")
+
+        // let name = prompt("Enter your name")
+        // console.log(name)
+
+        // let confirmData = confirm("ARE YOU SURE ?")
+        // console.log(confirmData)
+
+        // let btnEle = document.getElementById("btn2");
+        // btnEle.disabled = false;
+      }
+
+      function printValue() {
+        const inputEleValue = document.getElementById("inp").value;
+        if (inputEleValue.length > 8) {
+          document.getElementById("btn2").disabled = false;
+        } else {
+          document.getElementById("btn2").disabled = true;
+        }
+      }
+
+      function loadData() {
+        const btnEle = document.getElementById("btn-click");
+        btnEle.addEventListener("click", printOver);
+        // btnEle.addEventListener("mouseout", printOut);
+      }
+
+      function printOver() {
+        console.log("Mouse Over");
+      }
+
+      function printOut() {
+        console.log("Mouse Out");
+      }
+    </script>
+  </body>
+</html>

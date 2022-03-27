@@ -24,13 +24,13 @@
 <body>
 
     <main>
-        <section>
+        <section class="login_form">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 mt-3 mb-5">
-                        <h1 class="page_title">Login</h1>
+                    <div class="col-lg-12 mt-3 mb-5">
+                        <h1 class="page_title text-center">Login</h1>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-4">
 
                         <div class="mb-3">
                             <label for="EmailAdd" class="form-label">Email address</label>
@@ -114,12 +114,22 @@
                 document.getElementById("submit").disabled = true;
 
             } else if (passValue.length <= 8) {
-                    document.getElementById("submit").disabled = true;
+                document.getElementById("submit").disabled = true;
             }
             else {
                 document.getElementById("submit").disabled = false;
             }
         }
+
+        // function printValue(){
+        //     const emailValue = document.getElementById("EmailAdd").value;
+        //     const passValue = document.getElementById("Password").value
+        //     if(emailValue.length == 0 || passValue.length <= 8){
+        //         document.getElementById("submit").disabled = true;
+        //     }else{
+        //         document.getElementById("submit").disabled = false;
+        //     }
+        // }
 
     </script>
 

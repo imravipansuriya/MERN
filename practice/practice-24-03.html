@@ -31,20 +31,21 @@
                         <h1 class="page_title text-center">Login</h1>
                     </div>
                     <div class="col-lg-4">
-
-                        <div class="mb-3">
-                            <label for="EmailAdd" class="form-label">Email address</label>
-                            <input type="email" class="form-control" onkeyup="printValue()" id="EmailAdd"
-                                aria-describedby="emailHelp" value="">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="Password" onkeyup="printValue()">
-                        </div>
-                        <button disabled onclick="hello()" type="submit" id="submit"
-                            class="btn btn-primary">Submit</button>
-
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="EmailAdd" class="form-label">Email address</label>
+                                <input type="email" class="form-control" onkeyup="printValue()" id="EmailAdd"
+                                    aria-describedby="emailHelp" value="">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="Password" onkeyup="printValue()">
+                            </div>
+                            <button disabled onclick="hello()" type="submit" id="submit"
+                                class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -55,16 +56,26 @@
     <script src="./assets/js/bootstrap.min.js"></script>
 
     <script>
+        // function printValue() {
+        //     const emailValue = document.getElementById("EmailAdd").value;
+        //     const passValue = document.getElementById("Password").value
+        //     if (emailValue.length == 0) {
+        //         document.getElementById("submit").disabled = true;
+
+        //     } else if (passValue.length <= 8) {
+        //             document.getElementById("submit").disabled = true;
+        //     }
+        //     else {
+        //         document.getElementById("submit").disabled = false;
+        //     }
+        // }
+
         function printValue() {
             const emailValue = document.getElementById("EmailAdd").value;
             const passValue = document.getElementById("Password").value
-            if (emailValue.length == 0) {
+            if (emailValue.length == 0 || passValue.length <= 8) {
                 document.getElementById("submit").disabled = true;
-
-            } else if (passValue.length <= 8) {
-                    document.getElementById("submit").disabled = true;
-            }
-            else {
+            } else {
                 document.getElementById("submit").disabled = false;
             }
         }
