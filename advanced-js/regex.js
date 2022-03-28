@@ -1,6 +1,10 @@
 // Regex: Regular Expression: used in JavaScript to match patterns in strings
 
 /**
+ * Suite to learn regex https://regex101.com/
+ */
+
+/**
  * Rules for writing regular expressions:
  * 1. Use forward slashes (/) as the delimiter
  * 2. Use the escape character (\) to escape special characters
@@ -14,10 +18,10 @@
 
 /**
  * Special characters:
- * \d: any digit
- * \D: any non-digit
- * \w: any word character
- * \W: any non-word character
+ * \d: any digit      \d matches a digit (equivalent to [0-9])
+ * \D: any non-digit  \D matches any character that's not a digit (equivalent to [^0-9])
+ * \w: any word character     \w matches any word character (equivalent to [a-zA-Z0-9_])
+ * \W: any non-word character \W matches any non-word character (equivalent to [^a-zA-Z0-9_])
  * \s: any whitespace character
  * \S: any non-whitespace character
  *  .:  matches any character except newline
