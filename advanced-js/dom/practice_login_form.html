@@ -31,25 +31,33 @@
                         <h1 class="page_title text-center">Login</h1>
                     </div>
                     <div class="col-lg-4">
-
                         <div class="mb-3">
                             <label for="EmailAdd" class="form-label">Email address</label>
                             <input type="email" class="form-control" onkeyup="printValue()" id="EmailAdd"
-                                aria-describedby="emailHelp" value="">
+                            aria-describedby="emailHelp" value="">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="Password" onkeyup="printValue()">
+                        <div class="mb-3 form-group">
+                            <label for="Password" class="form-label">Password</label>
+                            <input type="password" name="Password" class="form-control" id="Password" onkeyup="printValue()">
                         </div>
-                        <button disabled onclick="hello()" type="submit" id="submit"
+                        <div id="loginmessage" class="form-text">
+                            <p class="text-success" id="successMessage"></p>
+                            <p class="text-danger" id="errorMessage"></p>
+                          </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" onchange="showPass()" id="showPassword">
+                            <label class="form-check-label" for="showPassword">Show Password</label>
+                          </div>
+                        <!-- <button disabled onclick="hello()" type="submit" id="submit"
+                            class="btn btn-primary">Submit</button> -->
+                            <button onclick="submit()" type="submit" id="submit"
                             class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 
@@ -105,7 +113,7 @@
 
         //if email is not present, or Password is not of length 8, the submit btn should be disabled.
 
-        function printValue() {
+       /* function printValue() {
             const emailValue = document.getElementById("EmailAdd").value;
             const passValue = document.getElementById("Password").value
             if (emailValue.length == 0) {
@@ -118,7 +126,7 @@
                 document.getElementById("submit").disabled = false;
             }
         }
-
+*/
         // function printValue(){
         //     const emailValue = document.getElementById("EmailAdd").value;
         //     const passValue = document.getElementById("Password").value
@@ -128,6 +136,32 @@
         //         document.getElementById("submit").disabled = false;
         //     }
         // }
+
+
+        // Show and hide Password
+        function showPass(){
+            let checked = document.getElementById("showPassword").checked;
+            if(checked){
+                document.getElementById("Password").type = "text";
+            }
+            else{
+                document.getElementById("Password").type = "password";
+            }
+        }
+
+        // show login message 
+        function submit() {
+             let email = document.getElementById("EmailAdd").value
+             let password = document.getElementById("Password").value
+             
+             if(email == "ravi@gmail.com" && password == "password" ){
+                 document.getElementById("successMessage").innerHTML = "login successfully"
+                 document.getElementById("errorMessage").innerHTML = ""
+             }else{
+                 document.getElementById("errorMessage").innerHTML = "Login Failed. Please try again"
+                 document.getElementById("successMessage").innerHTML = ""
+             }
+        }    
 
     </script>
 
