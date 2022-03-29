@@ -39,11 +39,6 @@ let string = "ftp://boardINFinity.in";
 
 
 
-
-
-
-
-
 /*
     password: Must be at least 8 characters, Start with a capital letter and end with a number
     // 1. password.length >= 8
