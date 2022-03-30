@@ -13,6 +13,7 @@ const fs = require("fs") // file system module
 //     }
 // })
 
+
 // Synchronous read
 
 // Error handling
