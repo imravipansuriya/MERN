@@ -35,7 +35,15 @@ a{
     background-position: center;
     height: 100vh;
 }
-.login_form .form-control{
+.login_form .form-control, .sign_up .form-control, .sign_up .form-select{
     background-color: #ffffff66;
 }
 
+/* sign up */
+
+.sign_up{
+    background: linear-gradient(0deg, rgb(193 193 193 / 68%), rgb(255 255 255)), url(../images/leone-venter.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
