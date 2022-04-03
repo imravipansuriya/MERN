@@ -1,10 +1,10 @@
 // variable scope: it defines the reach of a variable
 
 
-{
-    var a = 1; // global scope;
-    console.log(a);
-}
+// {
+//     var a = 1; // global scope;
+//     console.log(a);
+// }
 
 // console.log(a);
 
@@ -60,21 +60,21 @@ console.log(a)
 // let a = 10;
 // console.log(a);
 
-// a = a + 5;
-// console.log(a);
-
+var a = a + 5;
+console.log(a);
 
 // you can declare same variables with var, but not with let and const
 
-
 /*
------------
+
+------------
 Block Scope
------------
+------------
 
 > ES6 introduced two important new JavaScript keywords: let and const.
 > These two keywords provide Block Scope in JavaScript.
 > Variables declared inside a { } block cannot be accessed from outside the block:
+
 */
 
 /*
