@@ -42,7 +42,6 @@ var num5 = "5"; // string
 
 // !== Not equal value or not equal type
 
-
 // ===: checks the value and type of variables
 // console.log(num1 === num2); // return false, if num1 is not equal to num2
 // console.log(num1 === num3); // return false, if num1 is not equal to num3

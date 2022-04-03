@@ -10,7 +10,7 @@ var str = str1 + str2;
 console.log(str);
 
 var demo1 = "Hello, ";
-var demo2 = "Hari"
+var demo2 = "Hari";
 
 var demo = demo1 + demo2;
 
