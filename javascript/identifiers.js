@@ -27,7 +27,6 @@ var Variable1 = 20 // allowed because it is different from variable1
 
 // var var = 20 // not allowed because var is a reserved keyword
 
-
 // multiline comment
 /*
 asdasdsad

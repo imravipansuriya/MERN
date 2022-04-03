@@ -4,7 +4,7 @@
  * 1. Number
  * 2. String
  * 3. Boolean
- * 
+ * 4. undefined
  */
 
 var var1 = 10; // number
@@ -13,7 +13,7 @@ var var6 = 10.20 // number
 var var3 = "Hello Ravi" // string
 var var4 = true // boolean  defaul valur 1
 var var5 = false // boolean
-
+var var6 = undefined //undefined
 // How to get the type of a variable:
 console.log(typeof var4);
 
@@ -90,3 +90,4 @@ let c = 6;
 c = 60;
 
 console.log(c)
+

@@ -1,3 +1,4 @@
+
 // miscelleneous operators
 
 // string concatenation: Join two strings
@@ -25,8 +26,6 @@ console.log(demo)
 // var count2 = "20";
 
 // console.log(count1 + count2)
-
-
 
 // var num1 = 10;
 // var num2 = "20";
@@ -64,6 +63,8 @@ console.log(typeof 20)
 console.log(typeof "sample")
 console.log(typeof true)
 
+
+
 // var demo1 = 50;
 // var demo2 = 60;
 // var demo3 = 80;
@@ -79,3 +80,5 @@ console.log(typeof true)
 // console.log(typeof demo4)
 // console.log(typeof demo)
 // console.log(typeof demodemo)
+
+

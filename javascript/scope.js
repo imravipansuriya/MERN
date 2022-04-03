@@ -1,13 +1,13 @@
 // variable scope: it defines the reach of a variable
 
-/*
+
 {
     var a = 1; // global scope;
     console.log(a);
 }
 
-console.log(a);
-*/
+// console.log(a);
+
 
 /*
 
@@ -57,11 +57,11 @@ var a = 25;
 console.log(a)
 */
 
-let a = 10;
-console.log(a);
+// let a = 10;
+// console.log(a);
 
-a = a + 5;
-console.log(a);
+// a = a + 5;
+// console.log(a);
 
 
 // you can declare same variables with var, but not with let and const
@@ -80,12 +80,13 @@ Block Scope
 /*
 
 {
-    const b =  3;    
+    const b =  3;
 }
 
 {
-  let x = 2;  
+  let x = 2;
 }
+
 // x can NOT be used here
 
 */
