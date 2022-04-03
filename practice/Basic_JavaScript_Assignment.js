@@ -23,7 +23,7 @@ for (var i = 1; i <= factorial; i++) {
 
 console.log(number)
 
-
+ 
 /*
 =========
 PROBLEM 2
@@ -45,6 +45,7 @@ Sample Output :
 function cube(n) {
     console.log(n * n * n)
 }
+
 cube(2)
 
 /*
@@ -73,7 +74,7 @@ let triangleside = triangle(20)
 console.log(triangleside)
  
 
-173.20508075688772
+// 173.20508075688772
 
 /*
 =========
@@ -156,7 +157,7 @@ Sample Input:
 12
 Sample Output:
 53.60 
-*/
+// */
 
 function Fahrenheit(celcius){
     console.log((celcius*1.8)+ 32);
@@ -207,7 +208,7 @@ Sample Output :
 
 */
 
-let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
+// let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 function nthTerm(number){
     if(number <= 0){
@@ -240,15 +241,15 @@ Sample Output :
 */
 
 
-let string = "Lorem Ipsum";
+// let string = "Lorem Ipsum";
 
-    
-if(string <= 0){
-    console.log("Error")
-}
-else{
-    console.log((string.replace(/\s/g,'').length))
-}
+   
+// if(string <= 0){
+//     console.log("Error")
+// }
+// else{
+//     console.log((string.replace(/\s/g,'').length))
+// }
     
 
 /*
@@ -434,7 +435,7 @@ Sample Output :
  */
 
   
-// let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
+let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
  
 
 function nthTerm(number){
@@ -495,4 +496,6 @@ Sample Input :
 5 3 1 * + 9 -
 Sample Output :
 -1
-*/
+*/  
+
+
