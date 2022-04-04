@@ -1,0 +1,9 @@
+database: Where we can store data.
+        we store data in files.
+
+
+Types of Databases:
+
+1. RDBMS: Relational Database Management System (Old database). we use SQL(structured query language) to write code. 
+2. NoSQL: Not only SQL.
+
