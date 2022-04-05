@@ -22,7 +22,7 @@ let evenArr = arr.filter((ele, index) => {
 })
 
 console.log(evenArr)
- 
+
 let array = [10, 20, 30, 40, 60, 120]
 
 let evenArray = array.filter( (value) => {

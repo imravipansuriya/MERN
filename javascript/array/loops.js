@@ -15,10 +15,11 @@ for(let i = 0; i < arr.length; i++){
 }*/
 
 
+
+
 for(let a = 0; a < array1.length; a++){ 
     console.log(array1[a])
 }
-
 
 // WAP to print all elements of the array in reverse order
  

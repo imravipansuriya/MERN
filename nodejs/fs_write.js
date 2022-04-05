@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+console.log(fs)
+
 // Async Write
 // fs.writeFile("./data/hello_ne.txt", "Hello World sdfs sdfsdfsdf ", (err) => {
 //     if (err) {
