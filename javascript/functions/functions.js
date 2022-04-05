@@ -105,3 +105,12 @@ function grade(marks) {
 let gradeLetterForStudent1 = grade(75);
 let gradeLetterForStudent2 = grade(65);
 console.log(gradeLetterForStudent1, gradeLetterForStudent2);
+
+
+
+
+function data(d){
+    console.log(d*d)
+}
+
+data(10)

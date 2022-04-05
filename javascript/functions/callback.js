@@ -2,15 +2,15 @@
 
 const square = (num) => num * num;
 
-const demo = () =>{
-    console.log("demo")
-}
+// const demo = () =>{
+//     console.log("demo")
+// }
 
-const demo2 = () =>{
-    demo()
-}
+// const demo2 = () =>{
+//     demo()
+// }
 
-demo2()
+// demo2()
 
 
 // const hello = () => {

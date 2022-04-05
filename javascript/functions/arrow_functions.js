@@ -10,6 +10,8 @@ function area(length, width) {
 //     return length * width;
 // }
 
+
+/*
 const demo = (a, b) =>{
     return a*b;
 }
@@ -19,6 +21,8 @@ const demo1 = (c, d) => {
 }
 
 const demo2 = (e, f) => e*f;
+*/
+
 
 // const area = (length, width) => length * width;
 
@@ -31,6 +35,16 @@ function double(num) {
 // const double = (num) => {
 //     return num * 2;
 // }
+
+
+const e = 25;
+const double = (e) => {
+    
+  
+    return e*e;
+}
+
+console.log(double(e))
 
 // const double = (num) => num * 2;
 

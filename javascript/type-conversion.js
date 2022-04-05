@@ -1,3 +1,5 @@
+const { Script } = require("vm");
+
 var a = null; // there is some value in this variable, but that value is nothing
 var b = undefined; // there is some value in this variable, but it is not defined
 var c = ""; // empty string
@@ -22,3 +24,6 @@ console.log(typeof (10 + "5")) //string
 // -----------------------
 // Note :- true = 1 (Default value), false = 0 (Default value)
 // -----------------------
+
+
+

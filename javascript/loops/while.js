@@ -1,5 +1,19 @@
-// parseInt 
+/*
+// Syntax
 
+
+while (condition) {
+  // code block to be executed
+}
+
+// Example
+
+  while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
+
+*/
 
 
 // WAP print numbers from 1 to 10 using while loop
@@ -15,6 +29,7 @@ while( i <= 10 )// loop condition
 }
 */
 
+ 
 
 // var a = 1;
 // while (a <= 10){
@@ -22,6 +37,7 @@ while( i <= 10 )// loop condition
 //     a++;
 // }
 
+ 
 // var b = 1;
 // while(b <= 50){
 //      console.log(b);
@@ -56,6 +72,18 @@ while( i <= 20 )// loop condition
     i++; // loop updation
 }
 */
+
+// var number = 1;
+// while(number <= 20){
+//     // console.log(number)
+//     if(number % 2 == 1){
+//         console.log( number + " Even")
+//     }else{
+//         console.log(number + " Odd")
+//     }
+//     number++
+// }
+
 
 // even numbers
 
@@ -107,12 +135,12 @@ while(num > 0) { // loop condition
 */
 
 
-var count1 = 80;
+// var count1 = 80;
 
-while(count1 > 0){
-    console.log(count1 % 10);
-    count1 = parseInt(count1 / 10);
-}
+// while(count1 > 0){
+//     console.log(count1 % 10);
+//     count1 = parseInt(count1 / 10);
+// }
 
 
  
@@ -127,10 +155,18 @@ while(count1 > 0){
 //     i++;
 // }
  
-var count = 8;
-var i = 1;
+// var count = 8;
+// var i = 1;
 
-while(i <= 10){
-    console.log(count + " * "  + i + " * " +  count * i);
-    i++;
+// while(i <= 10){
+//     console.log(count + " * "  + i + " * " +  count * i);
+//     i++;
+// }
+
+var g = 1;
+var h = 7;
+
+while(g <= 10){
+    console.log(h + " * " + g + " = " + (g*h))
+    g++
 }

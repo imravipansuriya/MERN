@@ -14,6 +14,8 @@ var _num2 = 40
 var $num3 = 50
 var Num = 50
 
+
+
 // var 2num = 50 // not allowed
 
 // Rule 2: variable names are case sensitive
@@ -27,8 +29,30 @@ var Variable1 = 20 // allowed because it is different from variable1
 
 // var var = 20 // not allowed because var is a reserved keyword
 
+
+ 
 // multiline comment
 /*
 asdasdsad
 asdasdasd
+*/
+
+
+
+/*
+
+Variables
+---------
+var, const, let
+
+>var
+The most common variable. Can be reassigned but only accessed within a function. Variables
+defined with var move to the top when code is executed.
+
+>const
+Cannot be reassigned and not accessible before they appear within the code.
+
+>let
+Similar to const, however, let variable can be reassigned but not re-declared.
+
 */

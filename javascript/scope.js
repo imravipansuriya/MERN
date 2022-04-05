@@ -60,8 +60,8 @@ console.log(a)
 // let a = 10;
 // console.log(a);
 
-var a = a + 5;
-console.log(a);
+// var a = a + 5;
+// console.log(a);
 
 // you can declare same variables with var, but not with let and const
 
@@ -80,11 +80,20 @@ Block Scope
 /*
 
 {
-    const b =  3;
+ var d = 10;
 }
+console.log(d)   // we can print outside
+
+
+{
+    const b =  3;
+    console.log(b)   // can tot print outside
+}
+
 
 {
   let x = 2;
+  console.log(x) // can tot print outside
 }
 
 // x can NOT be used here

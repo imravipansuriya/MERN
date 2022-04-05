@@ -23,23 +23,41 @@
 //     i++;
 // }
 
-var row = 2;
-var col = 2;
+// var row = 2;
+// var col = 2;
 
-var q = 1;
+// var q = 1;
 
-while(q <= row){
+// while(q <= row){
 
-    var m = 1;
-    var star = "";
+//     var m = 1;
+//     var star = "";
 
-    while(m <= col){
-        star = star + "* "
-        m++;
-    }
+//     while(m <= col){
+//         star = star + "* "
+//         m++;
+//     }
     
+//     console.log(star)
+//     q++;
+// }
+
+
+var row = 5;
+var col = 5;
+
+var r = 1
+
+while (r <= row){
+    // console.log(" * ")
+    var h = 1;
+    var star = " "
+    while(h <= col){
+        star = star + " * "
+        h++
+    }
     console.log(star)
-    q++;
+    r++
 }
 
 

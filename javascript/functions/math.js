@@ -7,8 +7,8 @@
 // pi
 // ===========
 
-// const pi = 3.14;
-const pi = Math.PI;
+const pi = 3.14;
+// const pi = Math.PI;
 // console.log(pi)
 
 // ===========
@@ -16,9 +16,12 @@ const pi = Math.PI;
 // ===========
 
 // 3.6 => 4
-// 3.5 => 3
+// 3.5 => 4
 // 3.4 => 3
 // 3.7 => 4
+
+let round = Math.round(2.5);
+console.log(round)
 
 // let num = Math.round(3.4);
 // console.log(num)
@@ -74,6 +77,8 @@ console.log(demo6)
 let demo7 = Math.ceil(16.1);
 console.log(demo7);
 
+
+
 // =================================
 // floor ==> round down ==> gives the next lowest integer
 // =================================
@@ -118,12 +123,3 @@ console.log(demo12)
 
 // let num = Math.max(10, 20, 85, 40, 50, 45, 99, 105, 41);
 // console.log(num)
-
-
-
-var x = 10;
-console.log(x += 5)
-
-var x = "hi", y = 21;
-
-console.log(x, y)
