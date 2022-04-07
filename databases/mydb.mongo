@@ -109,7 +109,7 @@ db.mydb.updateMany({}, {
         marks: 34
     }
 })
-db.mydb.find()
+
 
 // Increment age of all the users by 5
 
@@ -154,6 +154,9 @@ db.mydb.update({name: "Alesandro"}, {
 })
 
 
-
+db.mydb.find()
 // Delete the User Madari whose age is 78
 db.mydb.deleteOne({name: "Madari", age: "78"})
+
+db.mydb.deleteOne({Name: "Farhan", age: "86"})
+db.mydb.deleteOne({Name: "Garee", age: "98"})
