@@ -1,0 +1,65 @@
+// Update
+db.users.find();
+
+// Update age of user Radha to new age age: 30
+
+db.users.update({ name: "Radha" }, {
+    $set: {
+        age: 30
+    }
+});
+
+// Add one field of class to all the users, where age is greater than 24
+db.users.updateMany({ }, {
+    $set: {
+        class: "MCA"
+    }
+});
+
+// add address to Ravi whose age is 21
+db.users.update({ name: "Ravi", age: 21 }, {
+    $set: {
+        address: {
+            city: "Bangalore",
+            state: "Karnataka"
+        },
+        class: "PHD"
+    }
+});
+
+// Increment age of all the users by 5
+db.users.updateMany({ }, {
+    $inc: {
+        age: 5
+    }
+});
+
+// Decrease age of all the users by 5
+db.users.updateMany({ }, {
+    $inc: {
+        age: -5
+    }
+});
+
+
+db.users.find();
+// add marks of empty array to all the users
+db.users.updateMany({ }, {
+    $set: {
+        marks: []
+    }
+});
+
+// add marks of 100 to all the users
+db.users.updateMany({ }, {
+    $push: {
+        marks: 100
+    }
+});
+
+// Add marks of 75 to Radha
+db.users.update({ name: "Radha" }, {
+    $push: {
+        marks: 75
+    }
+});

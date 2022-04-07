@@ -1,0 +1,58 @@
+db.users.find();
+
+db.users.insert({
+  name: "Ravi",
+  age: 30,
+  phone: "1234567890",
+});
+
+// Find User with name "Ravi"
+db.users.find({ name: "Ravi" });
+
+// name Ravi, age 30
+db.users.find({ name: "Ravi", age: 30 });
+
+// Age = 24
+db.users.find({ age: 24 });
+
+// Age > 24
+db.users.find({ age: { $gt: 24 } });
+
+// Age < 24
+db.users.find({ age: { $lt: 24 } });
+
+// Age >= 24
+db.users.find({ age: { $gte: 24 } });
+
+// Age <= 24
+db.users.find({ age: { $lte: 24 } });
+
+// Age != 24
+db.users.find({ age: { $ne: 24 } });
+
+// Find users with name "Ravi" or age 24
+// db.users.find({ name: "Ravi", age: 24 }); // and
+db.users.find({ $or: [{ name: "Ravi" }, { age: 24 }] });
+
+db.users.find({
+  $and: [{ name: "Ravi" }, { age: 24 }],
+  $or: [{ name: "Radha" }, { age: 31 }],
+});
+
+// Projection
+
+// db.teachers.find();
+db.users.find(
+  {},
+  {
+    _id: 0,
+    name: 1,
+    phone: 1,
+    address: {
+      state: 1,
+    },
+  }
+);
+
+
+

@@ -21,45 +21,61 @@ const promise = new Promise((resolve, reject) => {
     }, 2000);
 });
 
-const promise2 = new Promise((resolve, reject) => {
-    // asynchronous operation
-    setTimeout(() => {
-        if (num === 2) {
-            resolve("Hello My name is Promise 2");
-        } else {
-            reject(new Error("No ENT FIle FOund from promise 2"));
-        }
-    }, 2000);
-});
 
-// callback hell (callback hell)
+// 1. data returned from the promise // successful // .then
+// 2. error returned from the promise // failed // .catch
+
 promise.then(data => {
-    console.log("Value returned from Promise:", data);
-    promise2.then(data => {
-        console.log("Value returned from Promise 2:", data);
-        promise2.then(data => {
-            console.log("Value returned from Promise 2:", data);
-        }).catch(err => {
-            console.log("Error returned from Promise 2:", err);
-        });
-    }).catch(err => {
-        console.log("Error returned from Promise 2:", err);
-        promise2.then(data => {
-            console.log("Value returned from Promise 2:", data);
-        }).catch(err => {
-            console.log("Error returned from Promise 2:", err);
-        });
-    });
+    console.log(data);
+    
 }).catch(err => {
-    console.log("Error returned from Promise:", err.message);
-    promise2.then(data => {
-        console.log("Value returned from Promise 2:", data);
-    }).catch(err => {
-        console.log("Error returned from Promise 2:", err);
-    });
-}).finally(() => {
-    console.log("Finally block");
+    console.log(err);
 })
+
+
+
+// const promise2 = new Promise((resolve, reject) => {
+
+
+
+//     // asynchronous operation
+//     setTimeout(() => {
+//         if (num === 2) {
+//             resolve("Hello My name is Promise 2");
+//         } else {
+//             reject(new Error("No ENT FIle FOund from promise 2"));
+//         }
+//     }, 2000);
+// });
+
+// // callback hell (callback hell)
+// promise.then(data => {
+//     console.log("Value returned from Promise:", data);
+//     promise2.then(data => {
+//         console.log("Value returned from Promise 2:", data);
+//         promise2.then(data => {
+//             console.log("Value returned from Promise 2:", data);
+//         }).catch(err => {
+//             console.log("Error returned from Promise 2:", err);
+//         });
+//     }).catch(err => {
+//         console.log("Error returned from Promise 2:", err);
+//         promise2.then(data => {
+//             console.log("Value returned from Promise 2:", data);
+//         }).catch(err => {
+//             console.log("Error returned from Promise 2:", err);
+//         });
+//     });
+// }).catch(err => {
+//     console.log("Error returned from Promise:", err.message);
+//     promise2.then(data => {
+//         console.log("Value returned from Promise 2:", data);
+//     }).catch(err => {
+//         console.log("Error returned from Promise 2:", err);
+//     });
+// }).finally(() => {
+//     console.log("Finally block");
+// })
 
 // console.log(promise)
 

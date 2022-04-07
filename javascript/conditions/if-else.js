@@ -260,3 +260,15 @@ if (day === 1) {
 } else {
     console.log("You are a fool !")
 }
+
+
+/*
+
+if (cond1 && cond2){
+    // only when both cond1 and cond2 are true
+}
+
+if (cond1 || cond2){
+    // only when either cond1 or cond2 is true
+}
+*/

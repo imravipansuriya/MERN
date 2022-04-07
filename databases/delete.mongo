@@ -1,0 +1,4 @@
+db.users.find();
+
+// Delete the User Ravi whose age is 22
+db.users.deleteOne({ name: "Ravi", age: 22 });
