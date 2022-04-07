@@ -1,0 +1,159 @@
+
+db.mydb.find()
+
+// insert
+db.mydb.insert(
+    {
+        name: "Madari",
+        age:  "28"
+    }
+)
+
+// insertManey
+db.mydb.insertMany([
+    {
+        name: "Alesandro",
+        age:  "98"
+    },
+    {
+        name: "Aron",
+        age: "45"
+    },
+    {
+        name: "Madari",
+        age: "78"
+    }
+])
+
+db.mydb.insert({name: "zafia", age: "20"})
+
+// Find User with name "Madari"
+db.mydb.find({name: "Madari"})
+
+// Find User with name "Garee" and age 28
+ db.mydb.find({ name: "Madari", "age": "28"});
+
+// Age = 24
+db.mydb.find({ age: "24" });
+ 
+// Age > 24
+db.mydb.find({ age: { $gt: "24" } });
+
+// Age < 24
+db.mydb.find({age: {$lt: "24"} });
+
+// Age >= 24
+db.mydb.find({age: {$gte: "24"} });
+
+
+// Age <= 24
+db.mydb.find({age: {$lte: "24"} });
+
+// Age != 24
+db.mydb.find({age: { $ne: "24" }})
+
+
+
+
+// Find users with name "farha" or age 23
+// db.users.find({ name: "Ravi", age: 24 }); // and
+
+db.mydb.find( {$or: [{name: "Hanry"}, {age: "24"}]})
+
+db.mydb.find({
+    $and: [{ name: "Hanry" }, { age: "31" }],
+    $or: [{ name: "Madari" }, { age: "28" }],
+});
+
+
+
+// Projection
+
+db.mydb.find({}, {_id: 0})
+
+db.mydb.find({}, {_id: 0, name: 0})
+
+
+
+// ----- Update -----
+
+// Update age of user Aron to new age age: 30
+
+db.mydb.update({name: "Aron"},{
+    $set: {
+        age: "30"
+    }
+})
+
+// Add one field of class to all the users, where age is greater than 24
+
+db.mydb.update({age: "24"},{
+    $set: {
+        class: "BCA"
+    }
+})
+
+// add address to Hanry whose age is 31
+db.mydb.update({name: "Hanry", age: "31"},{  
+    $set: {
+        address: {
+            city: "Bangalore",
+            state: "Karnataka"
+        },
+        class: "PHD"
+    }
+})
+
+db.mydb.updateMany({}, {
+    $set: {
+        marks: 34
+    }
+})
+db.mydb.find()
+
+// Increment age of all the users by 5
+
+db.mydb.updateMany({}, {
+    $inc: {
+        marks: 5
+    }
+})
+
+
+// Decrease age of all the users by 5
+db.mydb.updateMany({}, {
+    $inc: {
+        marks: -5
+    }
+})
+
+
+// add parentage of empty array to all the users
+
+db.mydb.updateMany({}, {
+    $set: {
+        parentage: []
+    }
+})
+
+// add parentage of 100 to all the users
+
+db.mydb.updateMany({}, {
+    $push: {
+        parentage: 75
+    }
+})
+
+
+// Add marks of 75 to Alesandro
+
+db.mydb.update({name: "Alesandro"}, {
+    $push: {
+        parentage: 97
+    }
+})
+
+
+
+// Delete the User Madari whose age is 78
+db.mydb.deleteOne({name: "Madari", age: "78"})
