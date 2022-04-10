@@ -10,7 +10,7 @@ for(var i = 1 ; i <= 10 ; i++) {
 
 // WAP print numbers from 1 to 20 using for loop
 
-
+    
 // for (var i = 1; i <= 20; i++){
 //     console.log(i)
 // }
