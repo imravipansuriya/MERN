@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
+ 
 
 app.listen(3000, () => {
     console.log("Product server is running on port: 3000")
@@ -12,7 +13,7 @@ let products = [
         title: "Jerseys ",
         description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
         price: 26,
-        brand: "Zara",
+        brand: "zara",
         category: "Casual Wear",
         id: 1
     },
@@ -21,7 +22,7 @@ let products = [
         title: "Jerseys ",
         description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
         price: 26,
-        brand: "Zara",
+        brand: "zara",
         category: "Casual Wear",
         id: 1
     },
@@ -29,15 +30,15 @@ let products = [
         title: "NEMEZIZ",
         description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
         price: 89,
-        brand: "Adidas",
-        "category": "Sportswear",
+        brand: "adidas",
+        category: "Sportswear",
         id: 2
     },
 	    {
         title: "BOOTS",
         description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
         price: 97,
-        brand: "Adidas",
+        brand: "adidas",
         category: "Sportswear",
         id: 3
     },
@@ -45,7 +46,7 @@ let products = [
         title: "NEMEZIZ",
         description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
         price: 89,
-        brand: "Adidas",
+        brand: "adidas",
         category: "Sportswear",
         id: 4
     },
@@ -53,7 +54,7 @@ let products = [
         title: "PUMA x Royal Challengers",
         description: "Orders once successfully placed cannot be cancelled/returned.",
         price: 97,
-        brand: "PUMA",
+        brand: "puma",
         category: "T-Shirt",
         id: 5
     }
@@ -81,8 +82,7 @@ app.get("/products", (req, res) =>{
 })
 
 // get product with id
-
-app.get("/products/:id", (req, res)=>{
+app.get("/products/:id([0-9])", (req, res)=>{
     console.log("Requested product by id");
     console.log(req.params.id);
     let id = req.params.id;
@@ -99,43 +99,43 @@ app.get("/products/:id", (req, res)=>{
     }
 });
 
-// Update Product
-app.put("/products/:id", (req, res) => {
-    console.log("Requested user by id");
-    let id = req.params.id;
-    let product = products.find(product => product.id == id);
-    if (product) {
-        product.name = req.body.name;
-        product.age = req.body.age;
+// Get All the products with the brand name specified.
+app.get("/products/:brand", (req, res)=>{
+    console.log("Requested product by brand");
+    console.log(req.params.brand);
+    let brand = req.params.brand;
+    let product = products.filter(product => product.brand == brand);
+    if(product){
         res.send({
-            message: "User updated successfully",
-            data: user
+            message: "Product fatched Successfully " + req.params.brand,
+            data: product
         });
-    } else {
-        res.send({
-            message: "User not found"
-        });
+     } else {
+            res.send({
+                message: "Product not found"
+            })
     }
-})
+});
 
-
-// app.put("/products/:id/:name", (req, res)=>{
-//     console.log("Requested product by id");
-//     console.log(req.params.id);
+// // Update Product
+// app.put("/products/:id", (req, res) => {
+//     console.log("Requested user by id");
 //     let id = req.params.id;
-    
 //     let product = products.find(product => product.id == id);
-//     if(product){
+//     if (product) {
+//         product.name = req.body.name;
+//         product.age = req.body.age;
 //         res.send({
-//             message: "Product fatched Successfully",
-//             data: product
+//             message: "User updated successfully",
+//             data: user
 //         });
-//      } else {
-//             res.send({
-//                 message: "Product not found"
-//             })
+//     } else {
+//         res.send({
+//             message: "User not found"
+//         });
 //     }
-// });
+// })
+
 
 
 app.delete("/products/:id", (req, res) => {

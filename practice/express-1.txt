@@ -10,9 +10,9 @@ A product will have these properties.
     id (unique value, auto generated)
 }
 
-1. POST METHOD "/product":  send data from postman and add it to array
-2. GET METHOD "/products" : Get ALl products
-3. GET METHOD "/product/:id" : Get One product with id specified
-4. GET METHOD "/product/:brand" : Get All the products with the brand name specified.
-5. PUT METHOD "/product/:id": Update price of the product, price will come from req body.
-6. DELETE METHOD: "/product/:id": Delete product with specified id.
+1. POST METHOD "/product":  send data from postman and add it to array (Done)
+2. GET METHOD "/products" : Get ALl products (Done)
+3. GET METHOD "/product/:id" : Get One product with id specified (Done)
+4. GET METHOD "/product/:brand" : Get All the products with the brand name specified. (Done)
+5. PUT METHOD "/product/:id": Update price of the product, price will come from req body. 
+6. DELETE METHOD: "/product/:id": Delete product with specified id. (Done)
