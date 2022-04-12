@@ -17,15 +17,6 @@ let products = [
         category: "Casual Wear",
         id: 1
     },
-    {
-        
-        title: "Jerseys ",
-        description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
-        price: 26,
-        brand: "zara",
-        category: "Casual Wear",
-        id: 1
-    },
         {
         title: "NEMEZIZ",
         description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
@@ -57,21 +48,30 @@ let products = [
         brand: "puma",
         category: "T-Shirt",
         id: 5
+    },
+    {
+        
+        title: "Jerseys ",
+        description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
+        price: 26,
+        brand: "zara",
+        category: "Casual Wear",
+        id: 6
     }
 ]
 
 
-// add products
+// add products *
 app.post("/products", (req, res) =>{
    let newProduct = req.body;
     newProduct.id = products.length + 1;
     products.push(newProduct)
     res.send({
-        message: "Product add Successfully"
+        message: "Product added successfully"
     })
 })
 
-// get products
+// get products *
 
 app.get("/products", (req, res) =>{
     console.log("Requuested Products");
@@ -81,7 +81,7 @@ app.get("/products", (req, res) =>{
     })
 })
 
-// get product with id
+// get product with id *
 app.get("/products/:id([0-9])", (req, res)=>{
     console.log("Requested product by id");
     console.log(req.params.id);
@@ -117,24 +117,23 @@ app.get("/products/:brand", (req, res)=>{
     }
 });
 
-// // Update Product
-// app.put("/products/:id", (req, res) => {
-//     console.log("Requested user by id");
-//     let id = req.params.id;
-//     let product = products.find(product => product.id == id);
-//     if (product) {
-//         product.name = req.body.name;
-//         product.age = req.body.age;
-//         res.send({
-//             message: "User updated successfully",
-//             data: user
-//         });
-//     } else {
-//         res.send({
-//             message: "User not found"
-//         });
-//     }
-// })
+// Update Product
+app.put("/products/:id", (req, res) => {
+    console.log("Requested user by id");
+    let id = req.params.id;
+    let product = products.find(product => product.id == id);
+    if (product) {
+        product.price = req.body.price;
+        res.send({
+            message: "User updated successfully",
+            data: product
+        });
+    } else {
+        res.send({
+            message: "User not found"
+        });
+    }
+})
 
 
 
