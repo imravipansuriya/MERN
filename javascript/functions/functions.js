@@ -61,7 +61,7 @@ let width = 20;
 let areaOfRect = area(length, width);
 console.log(2 * areaOfRect)
 */
-
+/*
 // WAF to calculate the area of a rectangle, given the length and width and write another function to print its double
 
 function area(length, width) {
@@ -114,3 +114,18 @@ function data(d){
 }
 
 data(10)
+
+
+*/
+function demo(left, right, k){
+    let num = 0;
+    let count = 0;
+    for(let i = left; i <= right; i++){
+        if(i % k === 0){
+            num = num + i;
+            count++
+        }
+    }console.log(count)
+}
+
+demo(1, 10, 3)

@@ -41,8 +41,6 @@ const userSchema = new mongoose.Schema({
 
 const userModel = mongoose.model("users", userSchema); // collection
 
-
-
 module.exports = userModel;
 
 // db.users.findOne()

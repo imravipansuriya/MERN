@@ -1,3 +1,5 @@
+const userModel = require("../schema/user.schema");
+
 let users = [
     {
         id: 1,
@@ -20,72 +22,120 @@ let users = [
 
 const userController = {
 
-    getAllUsers: (req, res) => {
-        console.log("Requested users");
-        res.send({
-            message: "Users fetched successfully",
-            data: users
-        });
-    },
-
-    getOneUser: (req, res) => {
-        console.log("Requested user by id");
-        let id = req.params.id;
-        let user = users.find(user => user.id == id);
-        if (user) {
-            res.send({
-                message: "User fetched successfully",
-                data: user
-            });
-        } else {
-            res.send({
-                message: "User not found"
-            });
+    getAllUsers: async (req, res) => {
+        try {
+            const users = await userModel.find({});
+            return res.status(200).json({ message: "Users", data: users });
+        } catch (err) {
+            console.log(err);
+            return res.status(400).send({
+                message: "Error in getting users"
+            })
         }
     },
 
-    addUser: (req, res) => {
+    getOneUser: async (req, res) => {
+        try {
+            const user = await userModel.findById(req.params.id);
+            // const user = await userModel.findOne({
+            //     _id: req.params.id,
+            //     is_deleted: false
+            // })
+            return res.status(200).json({ message: "User", data: user });
+        } catch (err) {
+            console.log(err);
+            return res.status(400).send({
+                message: "Error in getting user"
+            })
+        }
+    },
+
+    // a wait
+    // 
+    addUser: async (req, res) => {
         console.log(req.body);
         let newUser = req.body;
-        newUser.id = users.length + 1;
-        users.push(newUser);
-        res.send({
-            message: "User added successfully"
-        })
-    },
 
-    updateUser: (req, res) => {
-        console.log("Requested user by id");
-        let id = req.params.id;
-        let user = users.find(user => user.id == id);
-        if (user) {
-            user.name = req.body.name;
-            user.age = req.body.age;
-            res.send({
-                message: "User updated successfully",
-                data: user
+        try {
+
+            // Method 1
+            const val = await userModel.create({
+                name: newUser.name,
+                age: newUser.age,
+                email: newUser.email,
+            })
+
+            // Method 2
+            // const val = new userModel({
+            //     name: newUser.name,
+            //     age: newUser.age,
+            //     email: newUser.email,
+            // })
+
+            // await val.save();
+
+            console.log(val);
+            return res.status(200).send({
+                message: "User added successfully",
+                data: val
             });
-        } else {
-            res.send({
-                message: "User not found"
+        } catch (err) {
+            console.log(err);
+            return res.status(400).send({
+                message: "User not added",
+                error: err
             });
         }
     },
 
-    deleteUser: (req, res) => {
-        console.log("Requested user by id");
-        let id = req.params.id;
-        let user = users.find(user => user.id == id);
-        if (user) {
-            let index = users.indexOf(user);
-            users.splice(index, 1);
-            res.send({
-                message: "User deleted successfully"
-            });
-        } else {
-            res.send({
-                message: "User not found"
-            });
+    updateUser: async (req, res) => {
+        try {
+            // const updatedUser = await userModel.updateOne({
+            //     _id: req.params.id
+            // }, {
+            //     $set: {
+            //         name: req.body.name,
+            //         age: req.body.age,
+            //         email: req.body.email,
+            //     }
+            // })
+
+            // const user = await userModel.findById(req.params.id);
+            // user.name = req.body.name;
+            // user.age = req.body.age;
+            // user.email = req.body.email;
+            // await user.save();
+
+            await userModel.findByIdAndUpdate(req.params.id, {
+                $set: {
+                    name: req.body.name,
+                    age: req.body.age,
+                    email: req.body.email,
+                }
+            })
+
+            return res.status(200).json({ message: "User updated successfully" });
+        } catch (err) {
+            console.log(err);
+            return res.status(400).send({
+                message: "Error in updating user"
+            })
+        }
+    },
+
+    deleteUser: async (req, res) => {
+        try {
+            // const deletedUser = await userModel.deleteOne({
+            //     _id: req.params.id
+            // })
+
+            await userModel.findByIdAndDelete(req.params.id);
+            return res.status(200).json({ message: "User deleted successfully" });
+        } catch (err) {
+            console.log(err);
+            return res.status(400).send({
+                message: "Error in deleting user"
+            })
         }
     }
 };
