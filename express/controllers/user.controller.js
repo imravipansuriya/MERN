@@ -36,7 +36,7 @@ const userController = {
 
     getOneUser: async (req, res) => {
         try {
-            const user = await userModel.findById(req.params.id);
+            const user = await userModel.findById(req.params.id);   
             // const user = await userModel.findOne({
             //     _id: req.params.id,
             //     is_deleted: false
