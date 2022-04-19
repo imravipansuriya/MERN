@@ -79,9 +79,7 @@ console.log(demoindex2);
 /* 
         "Hello world"
 index =  012345678910
-                   
  */
-
 
 // let indexOfMy = str.indexOf("my"); // index of the first occurence of the substring
 // console.log(indexOfMy)
@@ -197,3 +195,14 @@ console.log(demosplit);
 
 // let split = str.split("");
 // console.log(split)
+
+
+
+// Demo add shaprator in number
+// let num = [123548798]
+
+// let spliNum = num.toString().split('');
+// console.log(spliNum)
+
+// let getNum = spliNum.join(',')
+// console.log(getNum)

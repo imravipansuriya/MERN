@@ -1,6 +1,6 @@
 // callback: function that is passed as an argument to another function.
 
-const square = (num) => num * num;
+// const square = (num) => num * num;
 
 // const demo = () =>{
 //     console.log("demo")
@@ -24,16 +24,18 @@ const square = (num) => num * num;
 // }
 // world()
 
-// const fn = () => {
-//     console.log("fn")
-// }
+const fn = () => {
+    console.log("Elephant")
+}
 
-// const main = (fn) => {
-//     fn(); // function invocation or calling
-// }
+const main = (fn) => {
+    fn(); // function invocation or calling
+}
 
-// main(world)
+ 
+
+console.log(fn())
 // main(hello);
-// // square(5);
+// square(5);
 
-// // hello();
+// hello();

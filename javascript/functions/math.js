@@ -97,7 +97,6 @@ console.log(demo8)
 let demo9 = Math.random();
 console.log(demo9)
 
-
             // =================================
             // random number between 1 and 6
             // =================================

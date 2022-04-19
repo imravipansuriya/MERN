@@ -63,8 +63,6 @@ console.log(typeof 20)
 console.log(typeof "sample")
 console.log(typeof true)
 
-
-
 // var demo1 = 50;
 // var demo2 = 60;
 // var demo3 = 80;
@@ -80,5 +78,3 @@ console.log(typeof true)
 // console.log(typeof demo4)
 // console.log(typeof demo)
 // console.log(typeof demodemo)
-
-

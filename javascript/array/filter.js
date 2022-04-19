@@ -39,3 +39,18 @@ console.log(evenArray)
 let oddArr = arr.filter(ele => ele % 2 !== 0)
 
 console.log(oddArr)
+
+
+console.log("numBox")
+
+let numBox = [21,21,54,878,3,321,847,87,987,64,5,321,4165,4,847,987,97,43,1,321,31,31]
+
+let getValue = array.filter( (value) =>{
+    if(value % 2 === 0 || value % 3 === 1){
+        return true
+    } else{
+        return false
+    }
+})
+
+console.log(getValue)

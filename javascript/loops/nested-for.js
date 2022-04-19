@@ -42,16 +42,17 @@ for (var j = 1 ; j <= 5 ; j++) {
 // }
 
 
-// function pattern (numOfRows, numOfCols) {
-//     for (var i = 1 ; i <= numOfRows ; i++) { // for rows
-//         var stars = "";
+function pattern (numOfRows, numOfCols) {
+    for (var i = 1 ; i <= numOfRows ; i++) { // for rows
+        var stars = "";
     
-//         for (var j = 1 ; j <= numOfCols ; j++) { // for columns
-//             stars = stars + "* "
-//         }
+        for (var j = 1 ; j <= numOfCols ; j++) { // for columns
+            stars = stars + "* "
+        }
     
-//         console.log(stars);
-//     }
-// }
+        console.log(stars);
+    }
+}
 
-// pattern(5, 10);
+pattern(5, 10);
+

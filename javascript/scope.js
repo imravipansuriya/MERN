@@ -1,13 +1,14 @@
 // variable scope: it defines the reach of a variable
+/*
 
+{
+    var a = 1; // global scope;
+    console.log(a);
+}
 
-// {
-//     var a = 1; // global scope;
-//     console.log(a);
-// }
+console.log(a);
 
-// console.log(a);
-
+*/
 
 /*
 

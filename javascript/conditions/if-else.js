@@ -241,7 +241,7 @@ if (num4 > num5){
     6: Saturday
     7: Sunday
 */
- 
+
 var day = 3;
 if (day === 1) {
     console.log("Monday");
@@ -260,7 +260,6 @@ if (day === 1) {
 } else {
     console.log("You are a fool !")
 }
-
 
 /*
 

@@ -107,14 +107,11 @@ let gradeLetterForStudent2 = grade(65);
 console.log(gradeLetterForStudent1, gradeLetterForStudent2);
 
 
-
-
 function data(d){
     console.log(d*d)
 }
 
 data(10)
-
 
 */
 function demo(left, right, k){

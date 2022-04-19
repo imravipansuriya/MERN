@@ -13,16 +13,20 @@ let demonum = 21;
 
 // console.log(typeof (num3+""));
 
-console.log(typeof ("" + demostr))
+// console.log(typeof ("" + demostr))
 
-// let numstr = "23.5asdas4";
+let numstr = "23.5asdas4";
+let numstr2 = "23.545698";
+let numstr3 = "56.57";
+let numstr4 = "78";
 
 // ===============================================
 // The Number() method converts a value to a number.
 // ===============================================
 
-// let num = Number(numstr);
+// let num = Number(numstr2);
 // console.log(num)
+
 
 // let number = Number(demostr)
 // console.log(demostr)
@@ -33,8 +37,8 @@ console.log(typeof ("" + demostr))
 // The parseInt method parses a value as a string and returns the first integer.
 // ===================================================================
 
-// let num = parseInt(numstr);
-// console.log(num)
+let num2 = parseInt(numstr2);
+console.log(num2)
 
 // let num = parseInt(demostr)
 // console.log(num)
@@ -46,18 +50,18 @@ console.log(typeof ("" + demostr))
 // The parseFloat() method parses a value as a string and returns the first number.
 // ===================================================================
 
-// let num = parseFloat(numstr);
-// console.log(num)
-
-let num = parseFloat(demostr)
+let num = parseFloat(numstr4);
 console.log(num)
-console.log(typeof num)
+
+// let num = parseFloat(demostr)
+// console.log(num)
+// console.log(typeof num)
 
 // let num = +numstr;
 // console.log(num)
 
 // console.log(typeof num);
 
-let num4 = +demostr;
+// let num4 = +demostr;
 
-console.log(typeof num4)
+// console.log(typeof num4)

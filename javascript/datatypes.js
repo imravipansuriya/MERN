@@ -75,6 +75,3 @@ let c = 6;
 c = 60;
 
 console.log(c)
-
-
-

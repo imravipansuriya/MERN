@@ -64,6 +64,7 @@ let demo2 = Object.values(student1)
 console.log(demo2)
 
 // for in loop
+
 for(let prop in student1) {
     console.log(student1[prop])
 }

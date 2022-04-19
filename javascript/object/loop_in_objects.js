@@ -1248,6 +1248,6 @@ const data = [
 //     return post.userId == 1
 // })
 
-// const postFromUser1 = data.filter(post => post.userId == 1)
+const postFromUser1 = data.filter(post => post.userId == 1)
 
-// console.log(postFromUser1)
+console.log(postFromUser1)

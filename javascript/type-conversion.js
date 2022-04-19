@@ -21,6 +21,9 @@ console.log(a + b) // NaN
 
 console.log(typeof (10 + "5")) //string
 
+
+
+
 // -----------------------
 // Note :- true = 1 (Default value), false = 0 (Default value)
 // -----------------------

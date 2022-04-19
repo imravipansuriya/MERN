@@ -10,7 +10,7 @@ let teacher = {
     }
 }
 
-const { mobile, classes } = teacher;
+const { mobile, classes, age } = teacher;
 
 console.log(mobile)
 

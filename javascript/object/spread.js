@@ -32,3 +32,4 @@ let student = {
 
 let bothArray = {...teacher, ...student}
 console.log(bothArray)
+    

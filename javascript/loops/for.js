@@ -31,7 +31,6 @@ for(var i = 1 ; i <= 20 ; i++) {
         console.log(i)
     }
 }
-
 */
 
 // WAP to print even numbers from 1 to 50

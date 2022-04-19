@@ -29,8 +29,6 @@ while( i <= 10 )// loop condition
 }
 */
 
- 
-
 // var a = 1;
 // while (a <= 10){
 //     console.log(a);
@@ -163,10 +161,10 @@ while(num > 0) { // loop condition
 //     i++;
 // }
 
-var g = 1;
-var h = 7;
+// var g = 1;
+// var h = 7;
 
-while(g <= 10){
-    console.log(h + " * " + g + " = " + (g*h))
-    g++
-}
+// while(g <= 10){
+//     console.log(h + " * " + g + " = " + (g*h))
+//     g++
+// }

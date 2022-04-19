@@ -6,7 +6,7 @@ let products = [{
         price: 26,
         brand: "zara",
         category: "Casual Wear",
-        id: 1
+         
     },
     {
         title: "NEMEZIZ",
@@ -14,7 +14,7 @@ let products = [{
         price: 89,
         brand: "adidas",
         category: "Sportswear",
-        id: 2
+     
     },
     {
         title: "BOOTS",
@@ -22,7 +22,7 @@ let products = [{
         price: 97,
         brand: "adidas",
         category: "Sportswear",
-        id: 3
+       
     },
     {
         title: "NEMEZIZ",
@@ -30,7 +30,7 @@ let products = [{
         price: 89,
         brand: "adidas",
         category: "Sportswear",
-        id: 4
+       
     },
     {
         title: "PUMA x Royal Challengers",
@@ -38,7 +38,7 @@ let products = [{
         price: 97,
         brand: "puma",
         category: "T-Shirt",
-        id: 5
+        
     },
     {
 
@@ -47,7 +47,7 @@ let products = [{
         price: 26,
         brand: "zara",
         category: "Casual Wear",
-        id: 6
+       
     }
 ]
 
@@ -63,6 +63,7 @@ const productController = {
                 title: newProduct.title,
                 description: newProduct.description,
                 price: newProduct.price,
+                sellingPrice: newProduct.price,
                 brand: newProduct.brand,
                 category: newProduct.category,
             })
@@ -107,15 +108,11 @@ const productController = {
         }
     },
 
-
     getAllProducts: async (req, res) => {
 
         try {
             const products = await productModel.find({});
-            return res.status(200).json({
-                message: "Products",
-                data: products
-            })
+            return res.status(200).json({message: "Products",data: products})
         } catch (err) {
             console.log(err)
             return res.status(400).send({

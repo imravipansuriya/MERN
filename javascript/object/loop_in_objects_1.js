@@ -47,7 +47,6 @@ const whitecars = cars.filter((car) => {
 
 console.log(whitecars)
 
-
 // Find the price of all red cars.
 // const redCars = cars.filter(car => car.color === 'red')
 // const redCarPrices = cars.filter(car => car.color === 'red').map(car => car.price)
@@ -97,7 +96,6 @@ console.log(carprice)
 
 // const carsByPrice = cars.sort((car1, car2) => car1.price - car2.price).map(car => car.model)
 // console.log(carsByPrice)
-
 
 const carpriceup = cars.sort((car1, car2) => car1.price - car2.price).map(car => car.price)
 console.log(carpriceup)
