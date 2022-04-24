@@ -44,6 +44,21 @@ class Person {
     }
 }
 
+
+class Cat {
+    constructor(name, sound) {
+        this.name = name;
+        this.sound = sound;
+    }
+}
+
+let cat = new Cat ("Tom", "Meow")
+ 
+
+console.log(cat.sound, cat.name)
+ 
+
+
 /*
 const person1 = new Person('John', 30, 'teacher');
 const person2 = new Person('Mary', 25, 'student');
@@ -55,16 +70,16 @@ person2.sayHello()
 person3.sayHello()
 */
 
-const persons = [];
-persons.push(new Person('John', 30, 'teacher'));
-persons.push(new Person('Mary', 25, 'student'));
-persons.push(new Person('Mike', 20, 'developer'));
+// const persons = [];
+// persons.push(new Person('John', 30, 'teacher'));
+// persons.push(new Person('Mary', 25, 'student'));
+// persons.push(new Person('Mike', 20, 'developer'));
 
-// console.log(persons);
+// // console.log(persons);
 
-persons.forEach(person => {
-    person.sayHello();
-})
+// persons.forEach(person => {
+//     person.sayHello();
+// })
 
 
 

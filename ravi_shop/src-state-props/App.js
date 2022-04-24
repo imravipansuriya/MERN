@@ -1,17 +1,16 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import First from './First'
 import Second from './Second'
 
 export default function App() {
+
+  const [counter, setCounter] = React.useState(10);
+
   return (
     <div>
-      App.js
-      <Second />
-      <First />
+      App
+      <Second counter={counter} />
+      <First setCounter={setCounter} />
     </div>
   )
 }
-
-
-// npm install redux@next react-redux@next

@@ -46,7 +46,6 @@ let string = "ftp://boardINFinity.in";
     // 3. password[password.length - 1] === password[password.length - 1].toString()
 */
 
-
 // let passwordString = 'Abc12345';
 // let passwordPattern = /^[A-Z]\w{7,}$/; // regex pattern
 
