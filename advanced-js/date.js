@@ -22,4 +22,3 @@ const date = new Date();
 // console.log(date.getSeconds())
 // console.log(date.getMilliseconds())
 console.log(date.getTimezoneOffset())
-
