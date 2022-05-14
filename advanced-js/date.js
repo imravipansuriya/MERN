@@ -17,8 +17,8 @@ const date = new Date();
 // console.log(date.getMonth()) // gives the month in number starting from 0
 // console.log(date.getDate())
 // console.log(date.getDay()) // gives the day in number starting from 0, 0 is sunday, 6 is saturday
-// console.log(date.getHours())
-// console.log(date.getMinutes())
+console.log(date.getHours())
+console.log(date.getMinutes())
 // console.log(date.getSeconds())
 // console.log(date.getMilliseconds())
 console.log(date.getTimezoneOffset())

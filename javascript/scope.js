@@ -88,13 +88,13 @@ console.log(d)   // we can print outside
 
 {
     const b =  3;
-    console.log(b)   // can tot print outside
+    console.log(b)   // can not print outside
 }
 
 
 {
   let x = 2;
-  console.log(x) // can tot print outside
+  console.log(x) // can not print outside
 }
 
 // x can NOT be used here
