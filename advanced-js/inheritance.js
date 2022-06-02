@@ -38,6 +38,11 @@ class Animal {
     }
 }
 
+// const dog = new Animal("Dog");
+
+// console.log(dog.speak())
+
+
 class Dog extends Animal {
 
     constructor(name) {

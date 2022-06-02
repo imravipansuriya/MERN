@@ -23,7 +23,7 @@ class ClassName {
 -----------
 
 class ClassName {
-  constructor() { ... }
+  constructor() {
   method_1() { ... }
   method_2() { ... }
   method_3() { ... }

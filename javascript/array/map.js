@@ -25,11 +25,13 @@ let arr = [10, 20, 30, 40, 60, 80];
 
 // console.log(doubleArr)
  
-// let plush = 0;
-// let plushArray = arr.map((ele)=>{
-//      plush = plush + ele;
-// })
-// console.log(plush)
+let plush = 0;
+let plushArray = arr.map((ele)=>{
+     plush = plush + ele;
+     return plush
+})
+console.log(plushArray)
+console.log(plush)
 
 // WAP to get square of all elements of the array using map
 
