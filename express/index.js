@@ -4,6 +4,7 @@ const userRouter = require("./routes/users.route");
 const makeDatabaseConnection = require("./utils/db");
 const app = express();
 
+
 app.use(express.json());
 makeDatabaseConnection();
 app.use("/users", userRouter);

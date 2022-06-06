@@ -9,4 +9,5 @@ productRouter.get("/brand/:brand", productController.getProductBrand);
 productRouter.put("/:id", productController.updateProduct);
 productRouter.delete("/:id", productController.deleteProduct);
 
+
 module.exports = productRouter;

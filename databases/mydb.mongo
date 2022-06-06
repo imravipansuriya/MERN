@@ -9,6 +9,7 @@ db.mydb.insert(
     }
 )
 
+
 // insertManey
 db.mydb.insertMany([
     {
