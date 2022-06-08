@@ -1,55 +1,55 @@
 const productModel = require("../schema/product.schema");
 
-let products = [{
-        title: "Jerseys ",
-        description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
-        price: 26,
-        brand: "zara",
-        category: "Casual Wear",
+// let products = [{
+//         title: "Jerseys ",
+//         description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
+//         price: 26,
+//         brand: "zara",
+//         category: "Casual Wear",
          
-    },
-    {
-        title: "NEMEZIZ",
-        description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
-        price: 89,
-        brand: "adidas",
-        category: "Sportswear",
+//     },
+//     {
+//         title: "NEMEZIZ",
+//         description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
+//         price: 89,
+//         brand: "adidas",
+//         category: "Sportswear",
      
-    },
-    {
-        title: "BOOTS",
-        description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
-        price: 97,
-        brand: "adidas",
-        category: "Sportswear",
+//     },
+//     {
+//         title: "BOOTS",
+//         description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
+//         price: 97,
+//         brand: "adidas",
+//         category: "Sportswear",
        
-    },
-    {
-        title: "NEMEZIZ",
-        description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
-        price: 89,
-        brand: "adidas",
-        category: "Sportswear",
+//     },
+//     {
+//         title: "NEMEZIZ",
+//         description: "FLEXIBLE BOOTS FOR AGILITY ON FIRM GROUND",
+//         price: 89,
+//         brand: "adidas",
+//         category: "Sportswear",
        
-    },
-    {
-        title: "PUMA x Royal Challengers",
-        description: "Orders once successfully placed cannot be cancelled/returned.",
-        price: 97,
-        brand: "puma",
-        category: "T-Shirt",
+//     },
+//     {
+//         title: "PUMA x Royal Challengers",
+//         description: "Orders once successfully placed cannot be cancelled/returned.",
+//         price: 97,
+//         brand: "puma",
+//         category: "T-Shirt",
         
-    },
-    {
+//     },
+//     {
 
-        title: "Jerseys ",
-        description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
-        price: 26,
-        brand: "zara",
-        category: "Casual Wear",
+//         title: "Jerseys ",
+//         description: "“Casual wear” is only one of the phrases used to describe the trend away from pin stripes and high heels.",
+//         price: 26,
+//         brand: "zara",
+//         category: "Casual Wear",
        
-    }
-]
+//     }
+// ]
 
 
 const productController = {
