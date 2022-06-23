@@ -23,6 +23,6 @@ const productSchema = new mongoose.Schema({
 });
 
 
-const productModel = mongoose.model("products", productSchema); // collection
+const productModel = mongoose.model("products", productSchema); // collection name and schema name
 
 module.exports = productModel;
